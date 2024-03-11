@@ -4,7 +4,7 @@
     "href": "conduct.html",
     "title": "Code of Conduct",
     "section": "",
-    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n© 2024 the R-releases project"
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n© 2024 the R-releases project."
   },
   {
     "objectID": "conduct.html#our-pledge",
@@ -60,7 +60,7 @@
     "href": "contributors.html",
     "title": "Contributors",
     "section": "",
-    "text": "The code of conduct governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.\n© 2024 the R-releases project"
+    "text": "The code of conduct governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.\n© 2024 the R-releases project."
   },
   {
     "objectID": "contributors.html#how-to-register-your-package-with-r-releases",
@@ -109,7 +109,7 @@
     "href": "about.html",
     "title": "What is R-releases?",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility.\n© 2024 the R-releases project"
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility.\n© 2024 the R-releases project."
   },
   {
     "objectID": "about.html#the-quality-assurance-qa-for-r-packages",
@@ -137,7 +137,7 @@
     "href": "users.html",
     "title": "Users",
     "section": "",
-    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR natively supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally.\n© 2024 the R-releases project"
+    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR natively supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally.\n© 2024 the R-releases project."
   },
   {
     "objectID": "users.html#how-to-install-a-package-from-r-releases",
@@ -151,7 +151,7 @@
     "href": "users.html#a-home-for-non-cran-packages",
     "title": "Users",
     "section": "A home for non-CRAN packages",
-    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy. By contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
+    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
   },
   {
     "objectID": "users.html#a-guarantee-of-package-availability",
@@ -172,7 +172,7 @@
     "href": "review.html",
     "title": "Review Policy",
     "section": "",
-    "text": "As the contributors page explains, updates to the R-releases package listings come from pull requests to https://github.com/r-releases/contributions from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:\n© 2024 the R-releases project"
+    "text": "As the contributors page explains, updates to the R-releases package listings come from pull requests to https://github.com/r-releases/contributions from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:\n© 2024 the R-releases project."
   },
   {
     "objectID": "review.html#the-automated-review-process",
