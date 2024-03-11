@@ -133,6 +133,13 @@
     "text": "What about my personal R-universe?\nYou can still maintain a separate R-universe for yourself or your organization. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R-releases",
+    "section": "",
+    "text": "R-releases is a community-curated, maintainer-driven repository of R package releases.\nAnyone can contribute packages in the GitHub repository at https://github.com/r-releases/contributions. Once a package is registered, R-universe automatically builds and checks every new release and makes it available to install from https://r-releases.r-universe.dev/. Package maintainers have complete control over deployment.\nThe R-releases initiative originated from the R Consortium Repositories Working Group.\n\n\n\n© 2024 the R-releases project."
+  },
+  {
     "objectID": "users.html",
     "href": "users.html",
     "title": "Users",
