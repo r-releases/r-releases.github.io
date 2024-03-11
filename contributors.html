@@ -208,7 +208,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>The <a href="conduct.html">code of conduct</a> governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.</p>
+<p>The <a href="./conduct.html">code of conduct</a> governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.</p>
 <section id="how-to-register-your-package-with-r-releases" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-register-your-package-with-r-releases">How to register your package with R-releases</h2>
 <p>The one-time registration process proceeds as follows:</p>
@@ -339,7 +339,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/r-releases\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

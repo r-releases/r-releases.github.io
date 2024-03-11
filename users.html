@@ -218,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="a-home-for-non-cran-packages" class="level2">
 <h2 class="anchored" data-anchor-id="a-home-for-non-cran-packages">A home for non-CRAN packages</h2>
 <p>Many R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy.</p>
-<p>By <a href="contributors.html">contributing</a> a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location.</p>
+<p>By <a href="./contributors.html">contributing</a> a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location.</p>
 </section>
 <section id="a-guarantee-of-package-availability" class="level2">
 <h2 class="anchored" data-anchor-id="a-guarantee-of-package-availability">A guarantee of package availability</h2>
@@ -228,7 +228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Sometimes due to the archival of a dependency, and outside the maintainer’s direct control.</li>
 <li>Situations can be temporary, but may take an extended time to resolve.</li>
 </ul>
-<p>By <a href="contributors.html">contributing</a> a package that you rely on, you can ensure that it remains available for your critical workflows.</p>
+<p>By <a href="./contributors.html">contributing</a> a package that you rely on, you can ensure that it remains available for your critical workflows.</p>
 </section>
 <section id="a-direct-distribution-channel-from-maintainers" class="level2">
 <h2 class="anchored" data-anchor-id="a-direct-distribution-channel-from-maintainers">A direct distribution channel from maintainers</h2>
@@ -321,7 +321,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/r-releases\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>As the <a href="contributors.html">contributors</a> page explains, updates to the R-releases package listings come from pull requests to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:</p>
+<p>As the <a href="./contributors.html">contributors</a> page explains, updates to the R-releases package listings come from pull requests to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:</p>
 <ol type="1">
 <li>Ensure that all pull requests are reviewed using a consistent set of standards and principles that do not vary according to moderator.</li>
 <li>Ensure these standards and principles are clear and transparent for the R community.</li>
@@ -205,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="the-manual-review-process">The manual review process</h2>
 <p>If a pull request is flagged for manual review, an R-releases moderator will read the pull request and ask questions if necessary. Although the moderator may make optional suggestions on a case-by-case basis, package reviews must be consistent, reliable, and inclusive whenever possible. The decision to close or merge the pull request must be based exclusively on the following pre-defined list of requirements:</p>
 <ol type="1">
-<li>Each contribution must comply with the <a href="conduct.html">code of conduct</a>. Examples of prohibited content include profanity, malicious behavior, security risks, copyright violations, and other conduct which could reasonably be considered inappropriate in a professional setting. All this applies to the package, the URL, any other metadata in the contribution, and the contents of the package itself.</li>
+<li>Each contribution must comply with the <a href="./conduct.html">code of conduct</a>. Examples of prohibited content include profanity, malicious behavior, security risks, copyright violations, and other conduct which could reasonably be considered inappropriate in a professional setting. All this applies to the package, the URL, any other metadata in the contribution, and the contents of the package itself.</li>
 <li>Each contributed URL must point to an existing GitHub or GitLab repository.</li>
 <li>Each text file must apply to only one package.</li>
 <li>The text file name must be the name of the package.</li>
@@ -302,7 +302,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/r-releases\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
