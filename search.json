@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "users.html",
+    "href": "users.html",
+    "title": "Users",
+    "section": "",
+    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR natively supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally.\n© 2024 the R-releases project."
+  },
+  {
+    "objectID": "users.html#how-to-install-a-package-from-r-releases",
+    "href": "users.html#how-to-install-a-package-from-r-releases",
+    "title": "Users",
+    "section": "",
+    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR natively supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
+  },
+  {
+    "objectID": "users.html#a-home-for-non-cran-packages",
+    "href": "users.html#a-home-for-non-cran-packages",
+    "title": "Users",
+    "section": "A home for non-CRAN packages",
+    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
+  },
+  {
+    "objectID": "users.html#a-guarantee-of-package-availability",
+    "href": "users.html#a-guarantee-of-package-availability",
+    "title": "Users",
+    "section": "A guarantee of package availability",
+    "text": "A guarantee of package availability\nR-releases is designed to work seamlessly alongside CRAN. By prioritizing CRAN in the settings above, you can choose to still get your packages from CRAN, only using R-releases as a fall-back.\nA package may become unavailable on CRAN at any time due to its strict archival policy.\n\nSometimes due to the archival of a dependency, and outside the direct control of the maintainer.\nSituations can be temporary, but may take an extended time to resolve.\n\nBy contributing a package that you rely on, you can ensure that it remains available for your critical workflows."
+  },
+  {
+    "objectID": "users.html#a-direct-distribution-channel-from-maintainers",
+    "href": "users.html#a-direct-distribution-channel-from-maintainers",
+    "title": "Users",
+    "section": "A direct distribution channel from maintainers",
+    "text": "A direct distribution channel from maintainers\nMaintainers may choose to use R-releases as a faster release channel, especially for packages under intensive development.\nCRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows the timely dissemination of newer package versions containing critical updates or bug fixes.\nIf a package maintainer recommends you to install a package from R-releases, please prioritize R-releases in front of CRAN in the repository settings above."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R-releases",
+    "section": "",
+    "text": "R-releases is a community-curated, maintainer-driven repository of R package releases.\nAnyone can contribute packages in the GitHub repository at https://github.com/r-releases/contributions. Once a package is registered, R-universe automatically builds and checks every new release and makes it available to install from https://r-releases.r-universe.dev/. Package maintainers have complete control over deployment.\nThe R-releases initiative originated from the R Consortium Repositories Working Group.\n\n\n\n© 2024 the R-releases project."
+  },
+  {
     "objectID": "conduct.html",
     "href": "conduct.html",
     "title": "Code of Conduct",
@@ -56,6 +98,34 @@
     "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by [Mozilla’s code of conduct enforcement ladder][https://github.com/mozilla/inclusion].\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "What is R-releases?",
+    "section": "",
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility.\n© 2024 the R-releases project."
+  },
+  {
+    "objectID": "about.html#the-quality-assurance-qa-for-r-packages",
+    "href": "about.html#the-quality-assurance-qa-for-r-packages",
+    "title": "What is R-releases?",
+    "section": "",
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility."
+  },
+  {
+    "objectID": "about.html#continuous-maintainer-driven-deployment",
+    "href": "about.html#continuous-maintainer-driven-deployment",
+    "title": "What is R-releases?",
+    "section": "Continuous maintainer-driven deployment",
+    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://r-releases.r-universe.dev without needing to go through R-releases again. In other words, the package maintainer is in complete control. This painless maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system and key insights from Jeroen Ooms."
+  },
+  {
+    "objectID": "about.html#what-about-my-personal-r-universe",
+    "href": "about.html#what-about-my-personal-r-universe",
+    "title": "What is R-releases?",
+    "section": "What about my personal R-universe?",
+    "text": "What about my personal R-universe?\nYou can still maintain a separate R-universe for yourself or your organization. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
+  },
+  {
     "objectID": "contributors.html",
     "href": "contributors.html",
     "title": "Contributors",
@@ -103,76 +173,6 @@
     "title": "Contributors",
     "section": "Getting help",
     "text": "Getting help\nPlease report bugs to https://github.com/r-releases/help/issues and send other feedback and questions to https://github.com/r-releases/help/discussions. Please note that https://github.com/r-releases/contributions can only accept pull requests to add or modify package entries."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "What is R-releases?",
-    "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility.\n© 2024 the R-releases project."
-  },
-  {
-    "objectID": "about.html#the-quality-assurance-qa-for-r-packages",
-    "href": "about.html#the-quality-assurance-qa-for-r-packages",
-    "title": "What is R-releases?",
-    "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility."
-  },
-  {
-    "objectID": "about.html#continuous-maintainer-driven-deployment",
-    "href": "about.html#continuous-maintainer-driven-deployment",
-    "title": "What is R-releases?",
-    "section": "Continuous maintainer-driven deployment",
-    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://r-releases.r-universe.dev without needing to go through R-releases again. In other words, the package maintainer is in complete control. This painless maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system and key insights from Jeroen Ooms."
-  },
-  {
-    "objectID": "about.html#what-about-my-personal-r-universe",
-    "href": "about.html#what-about-my-personal-r-universe",
-    "title": "What is R-releases?",
-    "section": "What about my personal R-universe?",
-    "text": "What about my personal R-universe?\nYou can still maintain a separate R-universe for yourself or your organization. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R-releases",
-    "section": "",
-    "text": "R-releases is a community-curated, maintainer-driven repository of R package releases.\nAnyone can contribute packages in the GitHub repository at https://github.com/r-releases/contributions. Once a package is registered, R-universe automatically builds and checks every new release and makes it available to install from https://r-releases.r-universe.dev/. Package maintainers have complete control over deployment.\nThe R-releases initiative originated from the R Consortium Repositories Working Group.\n\n\n\n© 2024 the R-releases project."
-  },
-  {
-    "objectID": "users.html",
-    "href": "users.html",
-    "title": "Users",
-    "section": "",
-    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR natively supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally.\n© 2024 the R-releases project."
-  },
-  {
-    "objectID": "users.html#how-to-install-a-package-from-r-releases",
-    "href": "users.html#how-to-install-a-package-from-r-releases",
-    "title": "Users",
-    "section": "",
-    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR natively supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
-  },
-  {
-    "objectID": "users.html#a-home-for-non-cran-packages",
-    "href": "users.html#a-home-for-non-cran-packages",
-    "title": "Users",
-    "section": "A home for non-CRAN packages",
-    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
-  },
-  {
-    "objectID": "users.html#a-guarantee-of-package-availability",
-    "href": "users.html#a-guarantee-of-package-availability",
-    "title": "Users",
-    "section": "A guarantee of package availability",
-    "text": "A guarantee of package availability\nR-releases is designed to work seamlessly alongside CRAN. By prioritizing CRAN in the settings above, you can choose to still get your packages from CRAN, only using R-releases as a fall-back.\nA package may become unavailable on CRAN at any time due to its strict archival policy.\n\nSometimes due to the archival of a dependency, and outside the direct control of the maintainer.\nSituations can be temporary, but may take an extended time to resolve.\n\nBy contributing a package that you rely on, you can ensure that it remains available for your critical workflows."
-  },
-  {
-    "objectID": "users.html#a-direct-distribution-channel-from-maintainers",
-    "href": "users.html#a-direct-distribution-channel-from-maintainers",
-    "title": "Users",
-    "section": "A direct distribution channel from maintainers",
-    "text": "A direct distribution channel from maintainers\nMaintainers may choose to use R-releases as a faster release channel, especially for packages under intensive development.\nCRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows the timely dissemination of newer package versions containing critical updates or bug fixes.\nIf a package maintainer recommends you to install a package from R-releases, please prioritize R-releases in front of CRAN in the repository settings above."
   },
   {
     "objectID": "review.html",
