@@ -123,7 +123,7 @@
     "href": "about.html#what-about-my-personal-r-universe",
     "title": "What is R-releases?",
     "section": "What about my personal R-universe?",
-    "text": "What about my personal R-universe?\nYou can still maintain a separate personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
+    "text": "What about my personal R-universe?\nR-releases is designed to perfectly complement your existing personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
   },
   {
     "objectID": "contributors.html",
