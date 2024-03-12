@@ -4,21 +4,21 @@
     "href": "users.html",
     "title": "Users",
     "section": "",
-    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
+    "text": "R has built-in support for multiple repositories. Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nThis only needs to be done once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
   },
   {
     "objectID": "users.html#how-to-install-a-package-from-r-releases",
     "href": "users.html#how-to-install-a-package-from-r-releases",
     "title": "Users",
     "section": "",
-    "text": "Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nR supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
+    "text": "R has built-in support for multiple repositories. Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nThis only needs to be done once per session. We recommend adding it to your .Rprofile so that it is always available.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
   },
   {
     "objectID": "users.html#a-home-for-non-cran-packages",
     "href": "users.html#a-home-for-non-cran-packages",
     "title": "Users",
     "section": "A home for non-CRAN packages",
-    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
+    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
   },
   {
     "objectID": "users.html#a-guarantee-of-package-availability",
@@ -32,7 +32,7 @@
     "href": "users.html#a-direct-distribution-channel-from-maintainers",
     "title": "Users",
     "section": "A direct distribution channel from maintainers",
-    "text": "A direct distribution channel from maintainers\nMaintainers may use R-releases as a faster release channel, especially for packages under intensive development.\nCRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows timely dissemination of newer package versions containing critical updates or bug fixes.\nIf a package maintainer recommends that you install a package from R-releases, please prioritize R-releases in front of CRAN in the repository settings above."
+    "text": "A direct distribution channel from maintainers\nMaintainers may use R-releases as a faster release channel, especially for packages under intensive development.\nCRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows maintainers to push critical updates or bug fixes directly to users.\nIf a package maintainer recommends that you install a package from R-releases, please prioritize R-releases in front of CRAN in the repository settings above."
   },
   {
     "objectID": "index.html",
@@ -123,7 +123,7 @@
     "href": "about.html#what-about-my-personal-r-universe",
     "title": "What is R-releases?",
     "section": "What about my personal R-universe?",
-    "text": "What about my personal R-universe?\nYou can still maintain a separate R-universe for yourself or your organization. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
+    "text": "What about my personal R-universe?\nYou can still maintain a separate personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
   },
   {
     "objectID": "contributors.html",

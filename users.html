@@ -208,16 +208,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="how-to-install-a-package-from-r-releases" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-a-package-from-r-releases">How to install a package from R-releases</h2>
-<p>Simply add R-releases to your repository settings:</p>
+<p>R has built-in support for multiple repositories. Simply add R-releases to your repository settings:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://r-releases.r-universe.dev"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>R supports multiple repositories as a core language feature, and the above only needs to be set once per session. We recommend adding it to your <code>.Rprofile</code> so that it is always available.</p>
+<p>This only needs to be done once per session. We recommend adding it to your <code>.Rprofile</code> so that it is always available.</p>
 <p>Alternatively, to prioritize CRAN over R-releases:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="fu">getOption</span>(<span class="st">"repos"</span>), <span class="st">"https://r-releases.r-universe.dev"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
 </section>
 <section id="a-home-for-non-cran-packages" class="level2">
 <h2 class="anchored" data-anchor-id="a-home-for-non-cran-packages">A home for non-CRAN packages</h2>
-<p>Many R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of current CRAN policy.</p>
+<p>Many R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of CRAN policy.</p>
 <p>By <a href="./contributors.html">contributing</a> a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location.</p>
 </section>
 <section id="a-guarantee-of-package-availability" class="level2">
@@ -233,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="a-direct-distribution-channel-from-maintainers" class="level2">
 <h2 class="anchored" data-anchor-id="a-direct-distribution-channel-from-maintainers">A direct distribution channel from maintainers</h2>
 <p>Maintainers may use R-releases as a faster release channel, especially for packages under intensive development.</p>
-<p>CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows timely dissemination of newer package versions containing critical updates or bug fixes.</p>
+<p>CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows maintainers to push critical updates or bug fixes directly to users.</p>
 <p>If a package maintainer recommends that you install a package from R-releases, please prioritize R-releases in front of CRAN in the repository settings above.</p>
 
 
