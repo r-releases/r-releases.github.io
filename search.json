@@ -18,7 +18,7 @@
     "href": "users.html#a-home-for-non-cran-packages",
     "title": "Users",
     "section": "A home for non-CRAN packages",
-    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of these packages from a single repository location."
+    "text": "A home for non-CRAN packages\nMany R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of CRAN policy.\nBy contributing a package to R-releases, you may conveniently install the latest released versions of all these packages from a single repository location."
   },
   {
     "objectID": "users.html#a-guarantee-of-package-availability",
