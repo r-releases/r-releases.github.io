@@ -116,7 +116,7 @@
     "href": "about.html#continuous-maintainer-driven-deployment",
     "title": "What is R-releases?",
     "section": "Continuous maintainer-driven deployment",
-    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://r-releases.r-universe.dev without needing to go through R-releases again. In other words, the package maintainer is in complete control. This painless maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system and key insights from Jeroen Ooms."
+    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://r-releases.r-universe.dev without needing to go through R-releases again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system and key insights from Jeroen Ooms."
   },
   {
     "objectID": "about.html#what-about-my-personal-r-universe",
