@@ -25,7 +25,7 @@
     "href": "users.html#a-guarantee-of-package-availability",
     "title": "Users",
     "section": "A guarantee of package availability",
-    "text": "A guarantee of package availability\nR-releases is designed to work seamlessly alongside CRAN. By prioritizing CRAN in the settings above, you can continue to get your packages from CRAN, only using R-releases as a fall-back.\nA package may become unavailable on CRAN at any time due to its strict archival policy.\n\nSometimes due to the archival of a dependency, and outside the maintainer’s direct control.\nSituations can be temporary, but may take an extended time to resolve.\n\nBy contributing a package that you rely on, you can ensure that it remains available for your critical workflows."
+    "text": "A guarantee of package availability\nR-releases works seamlessly alongside CRAN. By prioritizing CRAN in the settings above, you can continue getting packages from CRAN, only using R-releases as a fall-back.\nA package may become unavailable on CRAN at any time due to its strict archival policy.\n\nSometimes due to the archival of a dependency, and outside the maintainer’s direct control.\nSituations can be temporary, but may take an extended time to resolve.\n\nBy contributing a package that you rely on, you can ensure it always remains available for your critical workflows."
   },
   {
     "objectID": "users.html#a-direct-distribution-channel-from-maintainers",
@@ -123,7 +123,7 @@
     "href": "about.html#what-about-my-personal-r-universe",
     "title": "What is R-releases?",
     "section": "What about my personal R-universe?",
-    "text": "What about my personal R-universe?\nR-releases is designed to perfectly complement your existing personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
+    "text": "What about my personal R-universe?\nR-releases perfectly complements your existing personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-releases deploys the latest package releases directly to the wider community."
   },
   {
     "objectID": "contributors.html",
