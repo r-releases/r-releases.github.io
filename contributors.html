@@ -213,19 +213,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The <a href="./conduct.html">code of conduct</a> governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.</p>
 <section id="how-to-register-a-package-with-r-releases" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-register-a-package-with-r-releases">How to register a package with R-releases</h2>
-<p>The one-time registration process proceeds as follows:</p>
-<ol type="1">
-<li>Ensure that the package source code exists in a public <a href="https://github.com">GitHub</a> or <a href="https://gitlab.com">GitLab</a> repository with the <code>DESCRIPTION</code> file at the root of the project. Example: <a href="https://github.com/r-lib/gh" class="uri">https://github.com/r-lib/gh</a>.</li>
-<li>Ensure that the repository hosts a <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">GitHub release</a> or <a href="https://docs.gitlab.com/ee/user/project/releases/">GitLab release</a> for the latest version intended for distribution. Example: <a href="https://github.com/r-lib/gh/releases/tag/v1.4.0" class="uri">https://github.com/r-lib/gh/releases/tag/v1.4.0</a>. Pre-releases (GitHub) and upcoming releases (GitLab) are ignored to ensure each release has the full endorsement of its maintainer.</li>
-<li>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> to contribute one or more text files to the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code> folder</a> with R package listings. For each contributed text file:</li>
-</ol>
+<p>For the one-time registration process:</p>
+<p>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> at <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> to contribute one or more text files to the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code> folder</a> with R package listings.</p>
+<p>For each contributed text file:</p>
 <ul>
 <li>The file name should be the package name</li>
 <li>The file should contain a single line with the package URL. <a href="https://github.com/r-releases/contributions/blob/main/packages/gh">Example</a>: https://github.com/r-lib/gh</li>
 </ul>
 <p>The provided URL must be the true and authentic GitHub/GitLab location of the package according to its owners, or an active mirror of the true location.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prerequisites
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>The package source code must exist in a public <a href="https://github.com">GitHub</a> or <a href="https://gitlab.com">GitLab</a> repository with the <code>DESCRIPTION</code> file at the root of the project. Example: <a href="https://github.com/r-lib/gh" class="uri">https://github.com/r-lib/gh</a>.</li>
+<li>The repository must host a <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">GitHub release</a> or <a href="https://docs.gitlab.com/ee/user/project/releases/">GitLab release</a> for the latest version intended for distribution. Example: <a href="https://github.com/r-lib/gh/releases/tag/v1.4.0" class="uri">https://github.com/r-lib/gh/releases/tag/v1.4.0</a>. Pre-releases (GitHub) and upcoming releases (GitLab) are ignored to ensure each release has the full endorsement of its maintainer.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -234,7 +247,7 @@ Packages in a GitHub repo subdirectory
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In rare cases, the package may be in a subdirectory of a GitHub repo. In these cases, your text file may instead contain a JSON list with fields <code>package</code>, <code>url</code>, <code>subdir</code>, and <code>branch</code>, and the <code>branch</code> field must be <code>"*release"</code>. <a href="https://github.com/r-releases/contributions/blob/main/packages/paws.analytics">Example</a>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
