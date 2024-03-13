@@ -217,21 +217,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Ensure that the package source code exists in a public <a href="https://github.com">GitHub</a> or <a href="https://gitlab.com">GitLab</a> repository with the <code>DESCRIPTION</code> file at the root of the project. Example: <a href="https://github.com/r-lib/gh" class="uri">https://github.com/r-lib/gh</a>.</li>
 <li>Ensure that the repository hosts a <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">GitHub release</a> or <a href="https://docs.gitlab.com/ee/user/project/releases/">GitLab release</a> for the latest version intended for distribution. Example: <a href="https://github.com/r-lib/gh/releases/tag/v1.4.0" class="uri">https://github.com/r-lib/gh/releases/tag/v1.4.0</a>. Pre-releases (GitHub) and upcoming releases (GitLab) are ignored to ensure each release has the full endorsement of its maintainer.</li>
-<li>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> to contribute one or more text files to the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code> folder</a> with R package listings.</li>
+<li>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> to contribute one or more text files to the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code> folder</a> with R package listings. For each contributed text file:</li>
 </ol>
-<p>The overwhelming majority of text files in (3) will be in simple URL format, which has these requirements:</p>
-<ol type="1">
-<li>The name of the file is the package name.</li>
-<li>The file contains a single line with the package URL. The URL must be authentic and genuine. It must be the true GitHub/GitLab location of the package according to its owners, or an active mirror of the true location.</li>
-<li>The file ends with a <a href="https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline">newline character</a>. (A terminating newline is included automatically if you create the file using the GitHub web interface.)</li>
-</ol>
-<p>In rare cases, the package may be in a subdirectory of a GitHub repo, in which case the contents of your text file may be a JSON list with fields <code>package</code>, <code>url</code>, <code>subdir</code>, and <code>branch</code>, and the <code>branch</code> field must be <code>"*release"</code>. <a href="https://github.com/r-releases/contributions/blob/main/packages/paws.analytics">Example</a>:</p>
+<ul>
+<li>The file name should be the package name</li>
+<li>The file should contain a single line with the package URL. Example: https://github.com/r-lib/gh</li>
+</ul>
+<p>The provided URL must be the true and authentic GitHub/GitLab location of the package according to its owners, or an active mirror of the true location.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Packages in a GitHub repo subdirectory
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In rare cases, the package may be in a subdirectory of a GitHub repo. In these cases, your text file may instead contain a JSON list with fields <code>package</code>, <code>url</code>, <code>subdir</code>, and <code>branch</code>, and the <code>branch</code> field must be <code>"*release"</code>. <a href="https://github.com/r-releases/contributions/blob/main/packages/paws.analytics">Example</a>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"package"</span><span class="fu">:</span> <span class="st">"paws.analytics"</span><span class="fu">,</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"url"</span><span class="fu">:</span> <span class="st">"https://github.com/paws-r/paws"</span><span class="fu">,</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"subdir"</span><span class="fu">:</span> <span class="st">"cran/paws.analytics"</span><span class="fu">,</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"branch"</span><span class="fu">:</span> <span class="st">"*release"</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="how-to-create-a-badge" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-create-a-badge">How to create a badge</h2>
