@@ -102,14 +102,14 @@
     "href": "about.html",
     "title": "What is R-releases?",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases currently aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility."
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases currently aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-releases.r-universe.dev/builds."
   },
   {
     "objectID": "about.html#the-quality-assurance-qa-for-r-packages",
     "href": "about.html#the-quality-assurance-qa-for-r-packages",
     "title": "What is R-releases?",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases currently aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always gives you a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. This judgement may require more than a novice understanding of testing, versions, and package compatibility."
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases currently aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-releases.r-universe.dev/builds."
   },
   {
     "objectID": "about.html#continuous-maintainer-driven-deployment",
