@@ -178,7 +178,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-register-a-package-with-r-releases" id="toc-how-to-register-a-package-with-r-releases" class="nav-link active" data-scroll-target="#how-to-register-a-package-with-r-releases">How to register a package with R-releases</a></li>
+  <li><a href="#how-to-register-a-package-with-r-releases" id="toc-how-to-register-a-package-with-r-releases" class="nav-link active" data-scroll-target="#how-to-register-a-package-with-r-releases">How to register a package with R-releases</a>
+  <ul class="collapse">
+  <li><a href="#the-one-time-registration-process" id="toc-the-one-time-registration-process" class="nav-link" data-scroll-target="#the-one-time-registration-process">The one-time registration process</a></li>
+  <li><a href="#requirements-for-registration" id="toc-requirements-for-registration" class="nav-link" data-scroll-target="#requirements-for-registration">Requirements for registration</a></li>
+  </ul></li>
   <li><a href="#how-to-create-a-badge" id="toc-how-to-create-a-badge" class="nav-link" data-scroll-target="#how-to-create-a-badge">How to create a badge</a></li>
   <li><a href="#how-to-edit-or-remove-packages" id="toc-how-to-edit-or-remove-packages" class="nav-link" data-scroll-target="#how-to-edit-or-remove-packages">How to edit or remove packages</a></li>
   <li><a href="#how-pull-requests-are-reviewed" id="toc-how-pull-requests-are-reviewed" class="nav-link" data-scroll-target="#how-pull-requests-are-reviewed">How pull requests are reviewed</a></li>
@@ -213,21 +217,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The <a href="./conduct.html">code of conduct</a> governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.</p>
 <section id="how-to-register-a-package-with-r-releases" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-register-a-package-with-r-releases">How to register a package with R-releases</h2>
-<p>For the one-time registration process:</p>
-<p>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> at <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> to contribute one or more text files to the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code> folder</a> with R package listings.</p>
-<p>For each contributed text file:</p>
-<ul>
-<li>The file name should be the package name</li>
-<li>The file should contain a single line with the package URL. <a href="https://github.com/r-releases/contributions/blob/main/packages/gh">Example</a>: https://github.com/r-lib/gh</li>
-</ul>
-<p>The provided URL must be the true and authentic GitHub/GitLab location of the package according to its owners, or an active mirror of the true location.</p>
+<section id="the-one-time-registration-process" class="level3">
+<h3 class="anchored" data-anchor-id="the-one-time-registration-process">The one-time registration process</h3>
+<ol type="1">
+<li>Navigate to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a>.</li>
+<li>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> to add one or more listings to the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code> folder</a>.</li>
+</ol>
+<p>Watch this 2-minute video to learn how:</p>
+<div style="padding:56.25% 0 0 0;position:relative;">
+<iframe src="https://player.vimeo.com/video/923333903?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="R-releases contribution tutorial">
+</iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+</section>
+<section id="requirements-for-registration" class="level3">
+<h3 class="anchored" data-anchor-id="requirements-for-registration">Requirements for registration</h3>
+<p>Each package listing is a simple text file:</p>
+<ol type="1">
+<li>The file name is the package name.</li>
+<li>The file contains a single line with the package URL. <a href="https://github.com/r-releases/contributions/blob/main/packages/gh">Example</a>: https://github.com/r-lib/gh</li>
+</ol>
+<p>The URL in (2) must be the true and authentic GitHub/GitLab location of the package according to its owners, or an active mirror of the true location.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Prerequisites
+Prerequisites for packages
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -259,6 +276,7 @@ Packages in a GitHub repo subdirectory
 </div>
 </div>
 </div>
+</section>
 </section>
 <section id="how-to-create-a-badge" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-create-a-badge">How to create a badge</h2>
