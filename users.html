@@ -179,9 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#how-to-install-a-package-from-r-releases" id="toc-how-to-install-a-package-from-r-releases" class="nav-link active" data-scroll-target="#how-to-install-a-package-from-r-releases">How to install a package from R-releases</a></li>
-  <li><a href="#a-home-for-non-cran-packages" id="toc-a-home-for-non-cran-packages" class="nav-link" data-scroll-target="#a-home-for-non-cran-packages">A home for non-CRAN packages</a></li>
-  <li><a href="#a-guarantee-of-package-availability" id="toc-a-guarantee-of-package-availability" class="nav-link" data-scroll-target="#a-guarantee-of-package-availability">A guarantee of package availability</a></li>
-  <li><a href="#a-direct-distribution-channel-from-maintainers" id="toc-a-direct-distribution-channel-from-maintainers" class="nav-link" data-scroll-target="#a-direct-distribution-channel-from-maintainers">A direct distribution channel from maintainers</a></li>
+  <li><a href="#what-does-r-releases-provide" id="toc-what-does-r-releases-provide" class="nav-link" data-scroll-target="#what-does-r-releases-provide">What does R-releases provide?</a></li>
   </ul>
 </nav>
     </div>
@@ -216,13 +214,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="fu">getOption</span>(<span class="st">"repos"</span>), <span class="st">"https://r-releases.r-universe.dev"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
 </section>
-<section id="a-home-for-non-cran-packages" class="level2">
-<h2 class="anchored" data-anchor-id="a-home-for-non-cran-packages">A home for non-CRAN packages</h2>
+<section id="what-does-r-releases-provide" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-r-releases-provide">What does R-releases provide?</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+1. A home for non-CRAN packages
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Many R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of CRAN policy.</p>
 <p>By <a href="./contributors.html">contributing</a> a package to R-releases, you may conveniently install the latest released versions of all these packages from a single repository location.</p>
-</section>
-<section id="a-guarantee-of-package-availability" class="level2">
-<h2 class="anchored" data-anchor-id="a-guarantee-of-package-availability">A guarantee of package availability</h2>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+2. A guarantee of package availability
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>R-releases works seamlessly alongside CRAN. By prioritizing CRAN in the settings above, you can continue getting packages from CRAN, only using R-releases as a fall-back.</p>
 <p>A package may become unavailable on CRAN at any time due to its strict archival policy.</p>
 <ul>
@@ -230,12 +252,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Situations can be temporary, but may take an extended time to resolve.</li>
 </ul>
 <p>By <a href="./contributors.html">contributing</a> a package that you rely on, you can ensure it always remains available for your critical workflows.</p>
-</section>
-<section id="a-direct-distribution-channel-from-maintainers" class="level2">
-<h2 class="anchored" data-anchor-id="a-direct-distribution-channel-from-maintainers">A direct distribution channel from maintainers</h2>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+3. A direct distribution channel from maintainers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Maintainers may use R-releases as a faster release channel, especially for packages under intensive development.</p>
 <p>CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-releases allows maintainers to push critical updates or bug fixes directly to users.</p>
 <p>If a package maintainer recommends that you install a package from R-releases, please prioritize R-releases in front of CRAN in the repository settings above.</p>
+</div>
+</div>
+</div>
 
 
 </section>
