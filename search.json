@@ -4,7 +4,7 @@
     "href": "users.html",
     "title": "Users",
     "section": "",
-    "text": "R has built-in support for multiple repositories. Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nThis is required only once per session. We recommend adding this line to your .Rprofile so that it is set automatically.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally.\n© 2024 the R-releases project."
+    "text": "R has built-in support for multiple repositories. Simply add R-releases to your repository settings:\noptions(repos = c(\"https://r-releases.r-universe.dev\", getOption(\"repos\")))\nThis is required only once per session. We recommend adding this line to your .Rprofile so that it is set automatically.\nAlternatively, to prioritize CRAN over R-releases:\noptions(repos = c(getOption(\"repos\"), \"https://r-releases.r-universe.dev\"))\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
   },
   {
     "objectID": "users.html#how-to-install-a-package-from-r-releases",
@@ -25,14 +25,14 @@
     "href": "index.html",
     "title": "R-releases",
     "section": "",
-    "text": "R-releases is a community-curated, maintainer-driven repository of R package releases.\nAnyone can contribute packages in the GitHub repository at https://github.com/r-releases/contributions. Once a package is registered, R-universe automatically builds and checks every new release and makes it available to install from https://r-releases.r-universe.dev/. Package maintainers have complete control over deployment.\nThe R-releases project originated from the R Consortium Repositories Working Group.\n\n\n\n© 2024 the R-releases project."
+    "text": "R-releases is a community-curated, maintainer-driven repository of R package releases.\nAnyone can contribute packages in the GitHub repository at https://github.com/r-releases/contributions. Once a package is registered, R-universe automatically builds and checks every new release and makes it available to install from https://r-releases.r-universe.dev/. Package maintainers have complete control over deployment.\nThe R-releases project originated from the R Consortium Repositories Working Group."
   },
   {
     "objectID": "conduct.html",
     "href": "conduct.html",
     "title": "Code of Conduct",
     "section": "",
-    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n© 2024 the R-releases project."
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
   },
   {
     "objectID": "conduct.html#our-pledge",
@@ -88,7 +88,7 @@
     "href": "about.html",
     "title": "What is R-releases?",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases currently aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-releases.r-universe.dev/builds.\n© 2024 the R-releases project."
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-releases currently aims at a space just before production, commonly referred to as QA, in that:\n\nEach package release has the full endorsement of its own maintainer. R-releases always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-releases.r-universe.dev/builds."
   },
   {
     "objectID": "about.html#the-quality-assurance-qa-for-r-packages",
@@ -116,7 +116,7 @@
     "href": "contributors.html",
     "title": "Contributors",
     "section": "",
-    "text": "The code of conduct governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.\n© 2024 the R-releases project."
+    "text": "The code of conduct governs all forms of participation in the R-releases project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms."
   },
   {
     "objectID": "contributors.html#how-to-register-a-package-with-r-releases",
@@ -172,7 +172,7 @@
     "href": "review.html",
     "title": "Review Policy",
     "section": "",
-    "text": "As the contributors page explains, updates to the R-releases package listings come from pull requests to https://github.com/r-releases/contributions from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:\n© 2024 the R-releases project."
+    "text": "As the contributors page explains, updates to the R-releases package listings come from pull requests to https://github.com/r-releases/contributions from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:"
   },
   {
     "objectID": "review.html#the-automated-review-process",
