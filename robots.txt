@@ -1,1 +1,1 @@
-Sitemap: https://r-releases.github.io/sitemap.xml
+Sitemap: https://r-multiverse.org/sitemap.xml

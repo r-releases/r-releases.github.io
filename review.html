@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R-releases - Review Policy</title>
+<title>R-multiverse - Review Policy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,10 +69,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="R-releases - Review Policy">
-<meta property="og:description" content="A community-curated, maintainer-driven repository of R package releases.">
-<meta property="og:image" content="https://r-releases.github.io/logo/logo-hexbin.png">
-<meta property="og:site_name" content="R-releases">
+<meta property="og:title" content="R-multiverse - Review Policy">
+<meta property="og:description" content="A community-curated collection of R package releases, powered by R-universe.">
+<meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
+<meta property="og:site_name" content="R-multiverse">
 <meta property="og:image:height" content="209">
 <meta property="og:image:width" content="181">
 </head>
@@ -85,10 +85,10 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo/logo-hexbin.png" alt="R-releases" class="navbar-logo">
+    <img src="./logo/logo-hexbin.png" alt="R-multiverse" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">R-releases</span>
+    <span class="navbar-title">R-multiverse</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">What is R-releases?</span></a>
+<span class="menu-text">What is R-multiverse?</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./users.html"> 
@@ -133,18 +133,18 @@ ul.task-list li input[type="checkbox"] {
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="GitHub"><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/r-releases/contributions">
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/r-multiverse/contributions">
             Contribute
             </a>
           </li>
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/r-releases/help">
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/r-multiverse/help">
             Report Issue
             </a>
           </li>
       </ul>
     </div>
-    <a href="https://r-releases.r-universe.dev/" title="" class="quarto-navigation-tool px-1" aria-label="R-releases R Universe"><i class="bi bi-rocket-takeoff"></i></a>
+    <a href="https://r-multiverse.r-universe.dev/" title="" class="quarto-navigation-tool px-1" aria-label="R-multiverse QA Universe"><i class="bi bi-rocket-takeoff"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -185,22 +185,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>As the <a href="./contributors.html">contributors</a> page explains, updates to the R-releases package listings come from pull requests to <a href="https://github.com/r-releases/contributions" class="uri">https://github.com/r-releases/contributions</a> from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-releases moderator. This document describes this manual review process. The goals are to:</p>
+<p>As the <a href="./contributors.html">contributors</a> page explains, updates to the R-multiverse package listings come from pull requests to <a href="https://github.com/r-multiverse/contributions" class="uri">https://github.com/r-multiverse/contributions</a> from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-multiverse moderator. This document describes this manual review process. The goals are to:</p>
 <ol type="1">
 <li>Ensure that all pull requests are reviewed using a consistent set of standards and principles that do not vary according to moderator.</li>
 <li>Ensure these standards and principles are clear and transparent for the R community.</li>
 </ol>
 <section id="the-automated-review-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-automated-review-process">The automated review process</h2>
-<p>The <a href="https://github.com/r-releases/r-releases.r-universe.dev/blob/main/.github/workflows/review_pull_requests.yaml"><code>review_pull_requests.yaml</code></a> <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Actions</a> workflow runs periodically and reviews each new open pull request using <a href="https://github.com/r-releases/r.releases.internals/blob/main/R/review_pull_request.R"><code>r.releases.internals::review_pull_request()</code></a>. Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.</p>
+<p>The <a href="https://github.com/r-multiverse/r-multiverse.r-universe.dev/blob/main/.github/workflows/review_pull_requests.yaml"><code>review_pull_requests.yaml</code></a> <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Actions</a> workflow runs periodically and reviews each new open pull request using <a href="https://github.com/r-multiverse/multiverse.internals/blob/main/R/review_pull_request.R"><code>multiverse.internals::review_pull_request()</code></a>. Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.</p>
 <p>The pull request is automatically closed if:</p>
 <ol type="1">
-<li>It attempts to add/modify/delete a file outside the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code></a> folder.</li>
-<li>It attempts to add/modify/delete a file in a subdirectory of the <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code></a> folder.</li>
+<li>It attempts to add/modify/delete a file outside the <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code></a> folder.</li>
+<li>It attempts to add/modify/delete a file in a subdirectory of the <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code></a> folder.</li>
 </ol>
 <p>The pull request is automatically flagged for manual review if:</p>
 <ol type="1">
-<li>It attempts to modify or delete any existing file in <a href="https://github.com/r-releases/contributions/tree/main/packages"><code>packages</code></a>.</li>
+<li>It attempts to modify or delete any existing file in <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code></a>.</li>
 <li>A contributed text file is not a single-line file.</li>
 <li>The text file looks like a custom JSON entry (for packages in a subdirectory of a GitHub repository).</li>
 <li>The name of the the text file is not a valid R package name.</li>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-manual-review-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-manual-review-process">The manual review process</h2>
-<p>If a pull request is flagged for manual review, an R-releases moderator will read the pull request and ask questions if necessary. Although the moderator may make optional suggestions on a case-by-case basis, package reviews must be consistent, reliable, and inclusive whenever possible. The decision to close or merge the pull request must be based exclusively on the following pre-defined list of requirements:</p>
+<p>If a pull request is flagged for manual review, an R-multiverse moderator will read the pull request and ask questions if necessary. Although the moderator may make optional suggestions on a case-by-case basis, package reviews must be consistent, reliable, and inclusive whenever possible. The decision to close or merge the pull request must be based exclusively on the following pre-defined list of requirements:</p>
 <ol type="1">
 <li>Each contribution must comply with the <a href="./conduct.html">code of conduct</a>. Examples of prohibited content include profanity, malicious behavior, security risks, copyright violations, and other conduct which could reasonably be considered inappropriate in a professional setting. All this applies to the package, the URL, any other metadata in the contribution, and the contents of the package itself.</li>
 <li>The package name, URL, and all other metadata must be complete and correct.</li>
@@ -316,7 +316,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/r-releases\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/r-multiverse\.org");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -651,7 +651,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© 2024 the R-releases project.</p>
+<p>© 2024 the R-multiverse project.</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
