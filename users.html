@@ -219,12 +219,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="how-to-install-a-package-from-r-multiverse" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-a-package-from-r-multiverse">How to install a package from R-multiverse</h2>
-<p>R has built-in support for multiple repositories. Simply add R-multiverse to your repository settings:</p>
+<p>R has built-in support for multiple repositories. Simply add R-multiverse to your repository settings. For example:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://r-multiverse.r-universe.dev"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This is required only once per session. We recommend adding this line to your <code>.Rprofile</code> so that it is set automatically.</p>
-<p>Alternatively, to prioritize CRAN over R-multiverse:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="fu">getOption</span>(<span class="st">"repos"</span>), <span class="st">"https://r-multiverse.r-universe.dev"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
+<p>Setting the <code>repos</code> option is only required once per session. We recommend adding this line to your <code>.Rprofile</code> so that it is set automatically. Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
 </section>
 <section id="what-does-r-multiverse-provide" class="level2">
 <h2 class="anchored" data-anchor-id="what-does-r-multiverse-provide">What does R-multiverse provide?</h2>
@@ -257,7 +254,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>R-multiverse works seamlessly alongside CRAN. By prioritizing CRAN in the settings above, you can continue to get packages from CRAN, only using R-multiverse as a fall-back.</p>
+<p>R-multiverse works seamlessly alongside CRAN.</p>
 <p>A package may become unavailable on CRAN at any time due to its strict archival policy.</p>
 <ul>
 <li>Sometimes due to the archival of a dependency, and outside the maintainer’s direct control.</li>
@@ -281,7 +278,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>Maintainers may use R-multiverse as a faster release channel, especially for packages under intensive development.</p>
 <p>CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-multiverse allows maintainers to push critical updates or bug fixes directly to users.</p>
-<p>If a package maintainer recommends that you install a package from R-multiverse, please prioritize R-multiverse in front of CRAN in the repository settings above.</p>
 </div>
 </div>
 </div>
