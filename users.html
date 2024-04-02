@@ -219,9 +219,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="how-to-install-a-package-from-r-multiverse" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-a-package-from-r-multiverse">How to install a package from R-multiverse</h2>
-<p>R has built-in support for multiple repositories. Simply add R-multiverse to your repository settings. For example:</p>
+<p>R has built-in support for multiple repositories.</p>
+<p>Simply add R-multiverse to your repository settings. For example:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://r-multiverse.r-universe.dev"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Setting the <code>repos</code> option is only required once per session. We recommend adding this line to your <code>.Rprofile</code> so that it is set automatically. Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
+<p>Setting the <code>repos</code> option is only required once per session. We recommend adding this line to your <code>.Rprofile</code> so that it is set automatically.</p>
+<p>Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
 </section>
 <section id="what-does-r-multiverse-provide" class="level2">
 <h2 class="anchored" data-anchor-id="what-does-r-multiverse-provide">What does R-multiverse provide?</h2>

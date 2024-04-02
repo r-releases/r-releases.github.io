@@ -4,14 +4,14 @@
     "href": "users.html",
     "title": "Users",
     "section": "",
-    "text": "R has built-in support for multiple repositories. Simply add R-multiverse to your repository settings. For example:\noptions(repos = c(\"https://r-multiverse.r-universe.dev\", getOption(\"repos\")))\nSetting the repos option is only required once per session. We recommend adding this line to your .Rprofile so that it is set automatically. Then proceed to use install.packages() or pak::pak() etc. as you would normally."
+    "text": "R has built-in support for multiple repositories.\nSimply add R-multiverse to your repository settings. For example:\noptions(repos = c(\"https://r-multiverse.r-universe.dev\", getOption(\"repos\")))\nSetting the repos option is only required once per session. We recommend adding this line to your .Rprofile so that it is set automatically.\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
   },
   {
     "objectID": "users.html#how-to-install-a-package-from-r-multiverse",
     "href": "users.html#how-to-install-a-package-from-r-multiverse",
     "title": "Users",
     "section": "",
-    "text": "R has built-in support for multiple repositories. Simply add R-multiverse to your repository settings. For example:\noptions(repos = c(\"https://r-multiverse.r-universe.dev\", getOption(\"repos\")))\nSetting the repos option is only required once per session. We recommend adding this line to your .Rprofile so that it is set automatically. Then proceed to use install.packages() or pak::pak() etc. as you would normally."
+    "text": "R has built-in support for multiple repositories.\nSimply add R-multiverse to your repository settings. For example:\noptions(repos = c(\"https://r-multiverse.r-universe.dev\", getOption(\"repos\")))\nSetting the repos option is only required once per session. We recommend adding this line to your .Rprofile so that it is set automatically.\nThen proceed to use install.packages() or pak::pak() etc. as you would normally."
   },
   {
     "objectID": "users.html#what-does-r-multiverse-provide",
