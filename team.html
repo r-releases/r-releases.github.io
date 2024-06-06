@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R-multiverse - Users</title>
+<title>R-multiverse - Team</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,8 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="R-multiverse - Users">
-<meta property="og:description" content="A community-curated collection of R package releases, powered by R-universe.">
+<meta property="og:title" content="R-multiverse - Team">
 <meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
 <meta property="og:site_name" content="R-multiverse">
 <meta property="og:image:height" content="209">
@@ -136,7 +101,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">What is R-multiverse?</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./users.html" aria-current="page"> 
+    <a class="nav-link" href="./users.html"> 
 <span class="menu-text">Users</span></a>
   </li>  
   <li class="nav-item">
@@ -144,7 +109,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Contributors</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./team.html"> 
+    <a class="nav-link active" href="./team.html" aria-current="page"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -194,8 +159,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-install-a-package-from-r-multiverse" id="toc-how-to-install-a-package-from-r-multiverse" class="nav-link active" data-scroll-target="#how-to-install-a-package-from-r-multiverse">How to install a package from R-multiverse</a></li>
-  <li><a href="#what-does-r-multiverse-provide" id="toc-what-does-r-multiverse-provide" class="nav-link" data-scroll-target="#what-does-r-multiverse-provide">What does R-multiverse provide?</a></li>
+  <li><a href="#members" id="toc-members" class="nav-link active" data-scroll-target="#members">Members</a></li>
+  <li><a href="#roles" id="toc-roles" class="nav-link" data-scroll-target="#roles">Roles</a></li>
+  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a>
+  <ul class="collapse">
+  <li><a href="#r-consortium" id="toc-r-consortium" class="nav-link" data-scroll-target="#r-consortium">R Consortium</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -204,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Users</h1>
+<h1 class="title">Team</h1>
 </div>
 
 
@@ -221,71 +190,81 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="how-to-install-a-package-from-r-multiverse" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-install-a-package-from-r-multiverse">How to install a package from R-multiverse</h2>
-<p>R has built-in support for multiple repositories.</p>
-<p>Simply add R-multiverse to your repository settings. For example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://r-multiverse.org"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Setting the <code>repos</code> option is only required once per session. We recommend adding this line to your <code>.Rprofile</code> so that it is set automatically.</p>
-<p>Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
+<section id="members" class="level2">
+<h2 class="anchored" data-anchor-id="members">Members</h2>
+<div class="container">
+<section id="will-landau" class="level3 row">
+<h3 class="anchored" data-anchor-id="will-landau">Will Landau</h3>
+<div class="columns">
+<div class="column" style="width:20%;">
+<p><a href="https://github.com/wlandau" target="_blank"> <img src="https://github.com/wlandau.png" class="img-fluid rounded-circle"> </a></p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:70%;">
+<p>Will Landau is a statistician and software developer in the life sciences. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages <a href="https://docs.ropensci.org/targets"><code>targets</code></a> and <a href="https://wlandau.github.io/crew"><code>crew</code></a>.</p>
+</div>
+</div>
 </section>
-<section id="what-does-r-multiverse-provide" class="level2">
-<h2 class="anchored" data-anchor-id="what-does-r-multiverse-provide">What does R-multiverse provide?</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-1. A home for non-CRAN packages
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Many R packages do not belong on CRAN. In particular, packages containing compiled code may require toolchains or binary downloads that fall outside of CRAN policy.</p>
-<p>By <a href="./contributors.html">contributing</a> a package to R-multiverse, you may conveniently install the latest released versions of all these packages from a single repository location.</p>
+<section id="charlie-gao" class="level3 row">
+<h3 class="anchored" data-anchor-id="charlie-gao">Charlie Gao</h3>
+<div class="columns">
+<div class="column" style="width:20%;">
+<p><a href="https://github.com/shikokuchuo" target="_blank"> <img src="https://github.com/shikokuchuo.png" class="img-fluid rounded-circle"> </a></p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:70%;">
+<p>Charlie Gao is the director of Hibiki AI Limited and a co-creator of R-multiverse. He is the creator of R packages <a href="https://github.com/shikokuchuo/mirai">mirai</a> and <a href="https://github.com/shikokuchuo/nanonext">nanonext</a>.</p>
 </div>
 </div>
+</section>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-2. A guarantee of package availability
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>R-multiverse works seamlessly alongside CRAN.</p>
-<p>A package may become unavailable on CRAN at any time due to its strict archival policy.</p>
+</section>
+<section id="roles" class="level2">
+<h2 class="anchored" data-anchor-id="roles">Roles</h2>
 <ul>
-<li>Sometimes due to the archival of a dependency, and outside the maintainer’s direct control.</li>
-<li>Situations can be temporary, but may take an extended time to resolve.</li>
+<li>Administrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.</li>
+<li>Moderators review <a href="./contributors.html">package contributions</a> according to the <a href="./review.html">package review policy</a>.</li>
 </ul>
-<p>By <a href="./contributors.html">contributing</a> a package that you rely on, you can ensure it always remains available for your critical workflows.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Member</th>
+<th>Administrator</th>
+<th>Moderator</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Will Landau</td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Charlie Gao</td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="support" class="level2">
+<h2 class="anchored" data-anchor-id="support">Support</h2>
+<div class="container">
+<section id="r-consortium" class="level3 row">
+<h3 class="anchored" data-anchor-id="r-consortium">R Consortium</h3>
+<div class="columns">
+<div class="column" style="width:20%;">
+<p><a href="https://www.r-consortium.org" target="_blank"> <img src="https://github.com/rconsortium.png" class="img-fluid rounded-circle"> </a></p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:70%;">
+<p>We would like to thank the <a href="https://www.r-consortium.org">R Consortium</a> for their support for the development of R-multiverse.</p>
 </div>
 </div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-3. A distribution channel direct from maintainers
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Maintainers may use R-multiverse as a faster release channel, especially for packages under intensive development.</p>
-<p>CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-multiverse allows maintainers to push critical updates or bug fixes directly to users.</p>
-</div>
-</div>
+</section>
 </div>
 
 
