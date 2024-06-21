@@ -60,7 +60,7 @@
     "href": "contributors.html#how-to-create-a-badge",
     "title": "Contributors",
     "section": "How to create a badge",
-    "text": "How to create a badge\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fr-community.r-universe.dev%2Fapi%2Fpackages%2FpkgNAMEquery=%24.Version&label=R-multiverse)](https://r-community.r-universe.dev/pkgNAME)"
+    "text": "How to create a badge\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAMEquery=%24.Version&label=R-multiverse)](https://community.r-multiverse.org/pkgNAME)"
   },
   {
     "objectID": "contributors.html#how-to-edit-or-remove-packages",
@@ -81,7 +81,7 @@
     "href": "contributors.html#how-the-r-multiverse-universe-is-built",
     "title": "Contributors",
     "section": "How the R-multiverse universe is built",
-    "text": "How the R-multiverse universe is built\nPeriodically, a GitHub Actions workflow collects all the packages and URLs from the packages folder and builds the packages.json file for the universe at https://github.com/r-multiverse/r-multiverse.r-universe.dev. https://r-multiverse.r-universe.dev periodically refreshes to include the latest release of each package in packages.json."
+    "text": "How the R-multiverse universe is built\nPeriodically, a GitHub Actions workflow collects all the packages and URLs from the packages folder and builds the packages.json file for the universe at https://github.com/r-multiverse/community. https://r-multiverse-community.r-universe.dev periodically refreshes to include the latest release of each package in packages.json."
   },
   {
     "objectID": "contributors.html#ownership-and-attribution",
@@ -102,21 +102,21 @@
     "href": "about.html",
     "title": "What is R-multiverse?",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-community.r-universe.dev."
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-multiverse-community.r-universe.dev."
   },
   {
     "objectID": "about.html#the-community-repository-for-r-packages",
     "href": "about.html#the-community-repository-for-r-packages",
     "title": "What is R-multiverse?",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-community.r-universe.dev."
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://r-multiverse-community.r-universe.dev."
   },
   {
     "objectID": "about.html#continuous-maintainer-driven-deployment",
     "href": "about.html#continuous-maintainer-driven-deployment",
     "title": "What is R-multiverse?",
     "section": "Continuous maintainer-driven deployment",
-    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://r-multiverse.org without needing to go through R-multiverse again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system managed by Jeroen Ooms."
+    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://community.r-multiverse.org without needing to go through R-multiverse again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system managed by Jeroen Ooms."
   },
   {
     "objectID": "about.html#what-about-my-personal-r-universe",
@@ -186,7 +186,7 @@
     "href": "index.html",
     "title": "R-multiverse",
     "section": "",
-    "text": "A community-curated collection of R package releases, powered by R-universe, available for installation from the repository at https://community.r-multiverse.org.\nAnyone can contribute packages to the GitHub repository at https://github.com/r-multiverse/contributions. Once a package is registered, every new release is automatically built and checked with results available at https://r-community.r-universe.dev. Package maintainers retain complete control over deployment.\nThe R-multiverse project originated from the R Consortium Repositories Working Group."
+    "text": "A community-curated collection of R package releases, powered by R-universe, available for installation from the repository at https://community.r-multiverse.org.\nAnyone can contribute packages to the GitHub repository at https://github.com/r-multiverse/contributions. Once a package is registered, every new release is automatically built and checked with results available at https://r-multiverse-community.r-universe.dev. Package maintainers retain complete control over deployment.\nThe R-multiverse project originated from the R Consortium Repositories Working Group."
   },
   {
     "objectID": "team.html",
