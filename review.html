@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
           </li>
       </ul>
     </div>
-    <a href="https://r-multiverse-community.r-universe.dev" title="" class="quarto-navigation-tool px-1" aria-label="R-multiverse Community Universe"><i class="bi bi-rocket-takeoff"></i></a>
+    <a href="https://community.r-multiverse.org" title="" class="quarto-navigation-tool px-1" aria-label="R-multiverse Community Universe"><i class="bi bi-rocket-takeoff"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -194,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <section id="the-automated-review-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-automated-review-process">The automated review process</h2>
-<p>The <a href="https://github.com/r-multiverse/r-multiverse.r-universe.dev/blob/main/.github/workflows/review_pull_requests.yaml"><code>review_pull_requests.yaml</code></a> <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Actions</a> workflow runs periodically and reviews each new open pull request using <a href="https://github.com/r-multiverse/multiverse.internals/blob/main/R/review_pull_request.R"><code>multiverse.internals::review_pull_request()</code></a>. Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.</p>
+<p>The <a href="https://github.com/r-multiverse/community/blob/main/.github/workflows/review.yaml"><code>review.yaml</code></a> <a href="https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions">GitHub Actions</a> workflow runs periodically and reviews each new open pull request using <a href="https://github.com/r-multiverse/multiverse.internals/blob/main/R/review_pull_requests.R"><code>multiverse.internals::review_pull_requests()</code></a>. Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.</p>
 <p>The pull request is automatically closed if:</p>
 <ol type="1">
 <li>It attempts to add/modify/delete a file outside the <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code></a> folder.</li>
