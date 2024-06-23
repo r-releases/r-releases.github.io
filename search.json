@@ -60,7 +60,7 @@
     "href": "contributors.html#how-to-create-a-badge",
     "title": "Contributors",
     "section": "How to create a badge",
-    "text": "How to create a badge\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAMEquery=%24.Version&label=R-multiverse)](https://community.r-multiverse.org/pkgNAME)"
+    "text": "How to create a badge\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2F&pkgNAMEquery=%24.Version&label=R-multiverse)](https://community.r-multiverse.org/pkgNAME)"
   },
   {
     "objectID": "contributors.html#how-to-edit-or-remove-packages",
