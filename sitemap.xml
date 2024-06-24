@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://r-multiverse.org/users.html</loc>
-    <lastmod>2024-06-23T14:40:08.333Z</lastmod>
+    <lastmod>2024-06-24T13:56:02.933Z</lastmod>
   </url>
   <url>
-    <loc>https://r-multiverse.org/review.html</loc>
-    <lastmod>2024-06-23T14:40:08.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://r-multiverse.org/contributors.html</loc>
-    <lastmod>2024-06-23T14:40:08.329Z</lastmod>
-  </url>
-  <url>
-    <loc>https://r-multiverse.org/about.html</loc>
-    <lastmod>2024-06-23T14:40:08.329Z</lastmod>
-  </url>
-  <url>
-    <loc>https://r-multiverse.org/conduct.html</loc>
-    <lastmod>2024-06-23T14:40:08.329Z</lastmod>
+    <loc>https://r-multiverse.org/security.html</loc>
+    <lastmod>2024-06-24T13:56:02.933Z</lastmod>
   </url>
   <url>
     <loc>https://r-multiverse.org/index.html</loc>
-    <lastmod>2024-06-23T14:40:08.329Z</lastmod>
+    <lastmod>2024-06-24T13:56:02.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-multiverse.org/conduct.html</loc>
+    <lastmod>2024-06-24T13:56:02.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-multiverse.org/about.html</loc>
+    <lastmod>2024-06-24T13:56:02.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-multiverse.org/contributors.html</loc>
+    <lastmod>2024-06-24T13:56:02.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://r-multiverse.org/review.html</loc>
+    <lastmod>2024-06-24T13:56:02.933Z</lastmod>
   </url>
   <url>
     <loc>https://r-multiverse.org/team.html</loc>
-    <lastmod>2024-06-23T14:40:08.333Z</lastmod>
+    <lastmod>2024-06-24T13:56:02.933Z</lastmod>
   </url>
 </urlset>
