@@ -84,6 +84,34 @@
     "text": "Support\n\n\nR Consortium\n\n\n  \n\n\n\nWe would like to thank the R Consortium for their support for the development of R-multiverse."
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "What is R-multiverse?",
+    "section": "",
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://community.r-multiverse.org."
+  },
+  {
+    "objectID": "about.html#the-community-repository-for-r-packages",
+    "href": "about.html#the-community-repository-for-r-packages",
+    "title": "What is R-multiverse?",
+    "section": "",
+    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://community.r-multiverse.org."
+  },
+  {
+    "objectID": "about.html#continuous-maintainer-driven-deployment",
+    "href": "about.html#continuous-maintainer-driven-deployment",
+    "title": "What is R-multiverse?",
+    "section": "Continuous maintainer-driven deployment",
+    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://community.r-multiverse.org without needing to go through R-multiverse again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system managed by Jeroen Ooms."
+  },
+  {
+    "objectID": "about.html#what-about-my-personal-r-universe",
+    "href": "about.html#what-about-my-personal-r-universe",
+    "title": "What is R-multiverse?",
+    "section": "What about my personal R-universe?",
+    "text": "What about my personal R-universe?\nR-multiverse perfectly complements your existing personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-multiverse deploys the latest package releases directly to the wider community."
+  },
+  {
     "objectID": "review.html",
     "href": "review.html",
     "title": "Review Policy",
@@ -203,32 +231,11 @@
     "text": "Language\nThis document may appear in other languages on the R-Multiverse website or elsewehere. In case of any discrepancy, the English version shall prevail."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "What is R-multiverse?",
+    "objectID": "security.html",
+    "href": "security.html",
+    "title": "Security Policy",
     "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://community.r-multiverse.org."
-  },
-  {
-    "objectID": "about.html#the-community-repository-for-r-packages",
-    "href": "about.html#the-community-repository-for-r-packages",
-    "title": "What is R-multiverse?",
-    "section": "",
-    "text": "A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.\nR-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at https://community.r-multiverse.org."
-  },
-  {
-    "objectID": "about.html#continuous-maintainer-driven-deployment",
-    "href": "about.html#continuous-maintainer-driven-deployment",
-    "title": "What is R-multiverse?",
-    "section": "Continuous maintainer-driven deployment",
-    "text": "Continuous maintainer-driven deployment\nEach package only needs to be registered once. Every new release automatically deploys to https://community.r-multiverse.org without needing to go through R-multiverse again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system managed by Jeroen Ooms."
-  },
-  {
-    "objectID": "about.html#what-about-my-personal-r-universe",
-    "href": "about.html#what-about-my-personal-r-universe",
-    "title": "What is R-multiverse?",
-    "section": "What about my personal R-universe?",
-    "text": "What about my personal R-universe?\nR-multiverse perfectly complements your existing personal or organization R-universe. This can continue to hold either release or development versions for yourself and your colleagues. At the same time, R-multiverse deploys the latest package releases directly to the wider community."
+    "text": "Security threats and vulnerabilities affect everyone using R-multiverse. Issues may include (but are not limited to):\n\nUnauthorized access to https://github.com/r-multiverse or its repositories.\nMalicious attempts to inundate https://github.com/r-multiverse/contributions/pulls with pull requests.\nOther denial of service (DoS) attacks on the R-multiverse bot or other infrastructure.\n\nPlease help keep R-multiverse operational. In the event of publicly visible malicious behavior, such as a DoS attack on https://github.com/r-multiverse/contributions/pulls, please:\n\nReport abuse or spam through GitHub.\nOpen an issue at https://github.com/r-multiverse/help to inform R-multiverse administrators.\n\nIf you notice a vulnerability that an attacker could potentially exploit, please report it privately. Confidentiality helps fix the problem before most attackers even know about it. After remediation, R-multiverse administrators will open an issue at https://github.com/r-multiverse/help to inform community about the vulnerability and its resolution.\nThe steps to privately report vulnerabilities are:\n\nNavigate to https://github.com/r-multiverse/help/security.\nUnder “Private vulnerability reporting”, click “Report a vulnerability”.\nDescribe the issue in the advisory details form.\nAt the bottom, click “Submit report”. GitHub will then add you as a collaborator on the proposed security advisory you created."
   },
   {
     "objectID": "index.html",
@@ -236,13 +243,6 @@
     "title": "R-multiverse",
     "section": "",
     "text": "A community-curated collection of R package releases, powered by R-universe, available for installation from the repository at https://community.r-multiverse.org.\nAnyone can contribute packages to the GitHub repository at https://github.com/r-multiverse/contributions. Once a package is registered, every new release is automatically built and checked with results available at https://community.r-multiverse.org. Package maintainers retain complete control over deployment.\nThe R-multiverse project originated from the R Consortium Repositories Working Group."
-  },
-  {
-    "objectID": "security.html",
-    "href": "security.html",
-    "title": "Security Policy",
-    "section": "",
-    "text": "Security threats and vulnerabilities affect everyone using R-multiverse. Issues may include (but are not limited to):\n\nUnauthorized access to https://github.com/r-multiverse or its repositories.\nMalicious attempts to inundate https://github.com/r-multiverse/contributions/pulls with pull requests.\nOther denial of service (DoS) attacks on the R-multiverse bot or other infrastructure.\n\nPlease help keep R-multiverse operational. In the event of publicly visible malicious behavior, such as a DoS attack on https://github.com/r-multiverse/contributions/pulls, please:\n\nReport abuse or spam through GitHub.\nOpen an issue at https://github.com/r-multiverse/help to inform R-multiverse administrators.\n\nIf you notice a vulnerability that an attacker could potentially exploit, please report it privately. Confidentiality helps fix the problem before most attackers even know about it. After remediation, R-multiverse administrators will open an issue at https://github.com/r-multiverse/help to inform community about the vulnerability and its resolution.\nThe steps to privately report vulnerabilities are:\n\nNavigate to https://github.com/r-multiverse/help/security.\nUnder “Private vulnerability reporting”, click “Report a vulnerability”.\nDescribe the issue in the advisory details form.\nAt the bottom, click “Submit report”. GitHub will then add you as a collaborator on the proposed security advisory you created."
   },
   {
     "objectID": "users.html",
