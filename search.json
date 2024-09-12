@@ -63,8 +63,8 @@
     "text": "Will Landau is a statistician and software developer in the life sciences. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages targets and crew.\n\n\n\n\n\n\n\n  \n\n\n\nCharlie Gao is director of Hibiki AI and a co-creator of R-multiverse. He is the creator of the mirai async framework for R and co-organizer of the CambRidge R user group."
   },
   {
-    "objectID": "team.html#members",
-    "href": "team.html#members",
+    "objectID": "team.html#administrators",
+    "href": "team.html#administrators",
     "title": "Team",
     "section": "",
     "text": "Will Landau is a statistician and software developer in the life sciences. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages targets and crew.\n\n\n\n\n\n\n\n  \n\n\n\nCharlie Gao is director of Hibiki AI and a co-creator of R-multiverse. He is the creator of the mirai async framework for R and co-organizer of the CambRidge R user group."
@@ -74,7 +74,7 @@
     "href": "team.html#roles",
     "title": "Team",
     "section": "Roles",
-    "text": "Roles\n\nAdministrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.\nModerators review package contributions according to the package review policy.\n\n\n\n\nMember\nAdministrator\nModerator\n\n\n\n\n\nWill Landau\n✓\n✓\n\n\n\nCharlie Gao\n✓\n✓"
+    "text": "Roles\n\nAdministrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.\nModerators review package contributions according to the package review policy."
   },
   {
     "objectID": "team.html#support",
