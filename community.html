@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Security Policy – R-multiverse</title>
+<title>Community – R-multiverse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Security Policy – R-multiverse">
+<meta property="og:title" content="Community – R-multiverse">
 <meta property="og:description" content="A community-curated package repository system, powered by R-universe">
 <meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
 <meta property="og:site_name" content="R-multiverse">
@@ -174,15 +174,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#an-open-repository-for-r-packages" id="toc-an-open-repository-for-r-packages" class="nav-link active" data-scroll-target="#an-open-repository-for-r-packages">An Open Repository for R Packages</a></li>
+  <li><a href="#continuous-maintainer-driven-deployment" id="toc-continuous-maintainer-driven-deployment" class="nav-link" data-scroll-target="#continuous-maintainer-driven-deployment">Continuous maintainer-driven deployment</a></li>
+  <li><a href="#what-about-my-personal-r-universe" id="toc-what-about-my-personal-r-universe" class="nav-link" data-scroll-target="#what-about-my-personal-r-universe">What about my personal R-universe?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Security Policy</h1>
+<h1 class="title">Community</h1>
 </div>
 
 
@@ -199,27 +207,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Security threats and vulnerabilities affect everyone using R-multiverse. Issues may include (but are not limited to):</p>
-<ul>
-<li>Unauthorized access to <a href="https://github.com/r-multiverse" class="uri">https://github.com/r-multiverse</a> or its repositories.</li>
-<li>Malicious attempts to inundate <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a> with pull requests.</li>
-<li>Other <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">denial of service (DoS) attacks</a> on the <a href="https://github.com/apps/r-multiverse">R-multiverse bot</a> or other infrastructure.</li>
-</ul>
-<p>Please help keep R-multiverse operational. In the event of publicly visible malicious behavior, such as a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DoS attack</a> on <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a>, please:</p>
+<section id="an-open-repository-for-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="an-open-repository-for-r-packages">An Open Repository for R Packages</h2>
+<p>Packages are available for installation from the repository at <a href="https://community.r-multiverse.org" class="uri">https://community.r-multiverse.org</a>.</p>
+<p>A traditional software version cycle begins with the development phase, where bugs are identified and fixed, and ends with the production phase, which promises a seamless user experience.</p>
+<p>Community aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:</p>
 <ol type="1">
-<li><a href="https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam">Report abuse or spam</a> through GitHub.</li>
-<li>Open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform R-multiverse administrators.</li>
+<li>Each package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.</li>
+<li>The user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, as indicated by their check results, publicly available at <a href="https://community.r-multiverse.org" class="uri">https://community.r-multiverse.org</a>.</li>
 </ol>
-<p>If you notice a vulnerability that an attacker could potentially exploit, please <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">report it privately</a>. Confidentiality helps fix the problem before most attackers even know about it. After remediation, R-multiverse administrators will open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform community about the vulnerability and its resolution.</p>
-<p>The steps to <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">privately report vulnerabilities</a> are:</p>
-<ol type="1">
-<li>Navigate to <a href="https://github.com/r-multiverse/help/security" class="uri">https://github.com/r-multiverse/help/security</a>.</li>
-<li>Under “Private vulnerability reporting”, click “Report a vulnerability”.</li>
-<li>Describe the issue in the advisory details form.</li>
-<li>At the bottom, click “Submit report”. GitHub will then add you as a collaborator on the proposed security advisory you created.</li>
-</ol>
+</section>
+<section id="continuous-maintainer-driven-deployment" class="level2">
+<h2 class="anchored" data-anchor-id="continuous-maintainer-driven-deployment">Continuous maintainer-driven deployment</h2>
+<p>Anyone can <a href="./contributors.html">contribute</a> packages to Community via GitHub. Each package only needs to be registered once.</p>
+<p>Every new <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">release</a> then automatically deploys to the repository without needing to go through R-multiverse again. In other words, the package maintainer is in complete control.</p>
+<p>This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of <a href="https://ropensci.org/r-universe/">rOpenSci’s R-universe system</a>.</p>
+</section>
+<section id="what-about-my-personal-r-universe" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-my-personal-r-universe">What about my personal R-universe?</h2>
+<p>R-multiverse perfectly complements your existing personal or organization R-universe.</p>
+<p>This can continue to hold either development or release versions for yourself and your colleagues. At the same time, R-multiverse deploys the latest package releases directly to the wider community.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

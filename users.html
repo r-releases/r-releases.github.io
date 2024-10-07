@@ -104,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <meta property="og:title" content="Users – R-multiverse">
-<meta property="og:description" content="A community-curated collection of R package releases, powered by R-universe.">
+<meta property="og:description" content="A community-curated package repository system, powered by R-universe">
 <meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
 <meta property="og:site_name" content="R-multiverse">
 <meta property="og:image:height" content="209">
@@ -131,10 +131,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">What is R-multiverse?</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./community.html">
+ <span class="dropdown-text">Community</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./production.html">
+ <span class="dropdown-text">Production</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./users.html" aria-current="page"> 
 <span class="menu-text">Users</span></a>
@@ -231,10 +242,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="how-to-install-a-package-from-r-multiverse" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-a-package-from-r-multiverse">How to install a package from R-multiverse</h2>
-<p>R has built-in support for multiple repositories.</p>
-<p>Simply add R-multiverse to your repository settings. For example:</p>
+<p>R has built-in support for multiple repositories. To add R-multiverse to your repository settings, a line can be added to your <a href="https://rstats.wtf/r-startup.html#rprofile"><code>.Rprofile</code></a> as follows.</p>
+<p>For Community:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://community.r-multiverse.org"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Setting the <code>repos</code> option is only required once per session. We recommend adding this line to your <code>.Rprofile</code> so that it is set automatically.</p>
+<p>For Production: <em>[Our first Production release is scheduled for 15 November 2024, and prior to that, a sample repository is available at <a href="https://r-multiverse.org/snapshot" class="uri">https://r-multiverse.org/snapshot</a>]</em></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://production.r-multiverse.org"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then proceed to use <code>install.packages()</code> or <code>pak::pak()</code> etc. as you would normally.</p>
 </section>
 <section id="what-does-r-multiverse-provide" class="level2">

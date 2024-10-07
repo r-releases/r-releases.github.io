@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Security Policy – R-multiverse</title>
+<title>Production – R-multiverse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -69,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Security Policy – R-multiverse">
+<meta property="og:title" content="Production – R-multiverse">
 <meta property="og:description" content="A community-curated package repository system, powered by R-universe">
 <meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
 <meta property="og:site_name" content="R-multiverse">
@@ -174,15 +208,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#beyond-community" id="toc-beyond-community" class="nav-link active" data-scroll-target="#beyond-community">Beyond Community</a></li>
+  <li><a href="#a-snapshot-model-for-production" id="toc-a-snapshot-model-for-production" class="nav-link" data-scroll-target="#a-snapshot-model-for-production">A Snapshot Model for Production</a></li>
+  <li><a href="#the-production-staging-process" id="toc-the-production-staging-process" class="nav-link" data-scroll-target="#the-production-staging-process">The Production Staging Process</a></li>
+  <li><a href="#current-snapshot" id="toc-current-snapshot" class="nav-link" data-scroll-target="#current-snapshot">Current Snapshot</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Security Policy</h1>
+<h1 class="title">Production</h1>
 </div>
 
 
@@ -199,27 +242,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Security threats and vulnerabilities affect everyone using R-multiverse. Issues may include (but are not limited to):</p>
+<section id="beyond-community" class="level2">
+<h2 class="anchored" data-anchor-id="beyond-community">Beyond Community</h2>
+<p>Available at <a href="https://production.r-multiverse.org" class="uri">https://production.r-multiverse.org</a>, the Production repository is designed to go one step beyond Community.</p>
+<p>It is comprised only of Community packages that pass additional checks, including <code>R CMD check</code> on all major platforms, ensuring a cohort of packages that work seamlessly togther.</p>
+<p>So whilst Community will always offer the latest packages, as released by maintainers, they will only make it to Production if they pass these additional quality controls.</p>
+</section>
+<section id="a-snapshot-model-for-production" class="level2">
+<h2 class="anchored" data-anchor-id="a-snapshot-model-for-production">A Snapshot Model for Production</h2>
+<p>But we take it one step further.</p>
+<p>Instead of the continuous rolling deployment model that CRAN provides, we provide snapshots of fixed package versions. This has the advantage that:</p>
+<ol type="1">
+<li>All packages within a snapshot are guaranteed to work with each other.</li>
+</ol>
 <ul>
-<li>Unauthorized access to <a href="https://github.com/r-multiverse" class="uri">https://github.com/r-multiverse</a> or its repositories.</li>
-<li>Malicious attempts to inundate <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a> with pull requests.</li>
-<li>Other <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">denial of service (DoS) attacks</a> on the <a href="https://github.com/apps/r-multiverse">R-multiverse bot</a> or other infrastructure.</li>
+<li>At any one point in time on CRAN, there will be packages that fail checks but are within grace periods and have not yet been updated or archived.</li>
 </ul>
-<p>Please help keep R-multiverse operational. In the event of publicly visible malicious behavior, such as a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DoS attack</a> on <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a>, please:</p>
-<ol type="1">
-<li><a href="https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam">Report abuse or spam</a> through GitHub.</li>
-<li>Open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform R-multiverse administrators.</li>
+<ol start="2" type="1">
+<li>Using fixed package versions aids reproducibility.</li>
+<li>Suited to environments without the ability to update over the internet.</li>
 </ol>
-<p>If you notice a vulnerability that an attacker could potentially exploit, please <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">report it privately</a>. Confidentiality helps fix the problem before most attackers even know about it. After remediation, R-multiverse administrators will open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform community about the vulnerability and its resolution.</p>
-<p>The steps to <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">privately report vulnerabilities</a> are:</p>
-<ol type="1">
-<li>Navigate to <a href="https://github.com/r-multiverse/help/security" class="uri">https://github.com/r-multiverse/help/security</a>.</li>
-<li>Under “Private vulnerability reporting”, click “Report a vulnerability”.</li>
-<li>Describe the issue in the advisory details form.</li>
-<li>At the bottom, click “Submit report”. GitHub will then add you as a collaborator on the proposed security advisory you created.</li>
-</ol>
+<p>We take quarterly snapshots on the 15th of each month in May, August, November and February.</p>
+<p><em>[Our first Production release is scheduled for 15 November 2024, and prior to that, a sample repository is available at <a href="https://r-multiverse.org/snapshot" class="uri">https://r-multiverse.org/snapshot</a>]</em></p>
+</section>
+<section id="the-production-staging-process" class="level2">
+<h2 class="anchored" data-anchor-id="the-production-staging-process">The Production Staging Process</h2>
+<p>Before each quarterly release, packages go through a one-month ‘staging’ process, which helps ensure packages continue to meet the high standards required of Production.</p>
+<p>Packages enter into the Staging repository at <a href="https://staging.r-multiverse.org/" class="uri">https://staging.r-multiverse.org/</a>. For those with passing checks, the package version is frozen.</p>
+<ul>
+<li>Even if another package release is made and Community updates, the version in Staging remains the same.</li>
+</ul>
+<p>Packages with failing checks, however, will continue to update from Community if a new release is made.</p>
+<p>This process helps maintainers to fix bugs, whilst minimizing the chances of last minute issues affecting large cohorts of packages.</p>
+<p>Staging opens on the 15th of each month in April, July, October and January.</p>
+</section>
+<section id="current-snapshot" class="level2">
+<h2 class="anchored" data-anchor-id="current-snapshot">Current Snapshot</h2>
+<p>The current snapshot release will be available at <a href="https://production.r-multiverse.org" class="uri">https://production.r-multiverse.org</a>.</p>
+<p>This repository provides:</p>
+<ul>
+<li>Source files</li>
+<li>Windows: R-4.4 binary, R-4.3 binary</li>
+<li>Mac x86: R-4.4 binary, R-4.3 binary</li>
+<li>Mac arm64: R-4.4 binary, R-4.3 binary</li>
+</ul>
+<p>It may be used in R repository settings or directly as the ‘repos’ argument to <code>install.packages()</code>. To query available packages:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">available.packages</span>(<span class="at">repos =</span> <span class="st">"https://production.r-multiverse.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>[Our first Production release is scheduled for 15 November 2024, and prior to that, a sample repository is available at <a href="https://r-multiverse.org/snapshot" class="uri">https://r-multiverse.org/snapshot</a>]</em></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
