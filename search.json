@@ -95,7 +95,7 @@
     "href": "index.html",
     "title": "R-multiverse",
     "section": "",
-    "text": "A community-curated package repository system, powered by R-universe\n\n\nCommunity\ncommunity.r-multiverse.org\nAn open and inclusive R package repository with transparent governance standards, built on open source infrastructure.\n\n\n+\n\n\nProduction\nproduction.r-multiverse.org\nA quarterly snapshot release of R packages, designed for deployment in production environments.\n\n\nThis project originated from the R Consortium Repositories Working Group and is supported by an R Consortium ISC grant."
+    "text": "A community-curated package repository system, powered by R-universe\n\n\nCommunity\ncommunity.r-multiverse.org\nAn open and inclusive R package repository with transparent governance standards, built on open source infrastructure.\n\n\n+\n\n\nProduction\nproduction.r-multiverse.org\nA quarterly snapshot release of R packages, designed for deployment in production environments.\n\n\nThis project is supported by an R Consortium ISC grant and originated from the R Consortium Repositories Working Group."
   },
   {
     "objectID": "review.html",
