@@ -14,7 +14,8 @@ So whilst Community will always offer the latest packages, as released by mainta
 
 But we take it one step further.
 
-Instead of the continuous rolling deployment model that CRAN provides, we provide snapshots of fixed package versions. This has the advantage that:
+Instead of the continuous rolling deployment model that CRAN provides, we provide snapshots of fixed package versions.
+This has the advantage that:
 
 1. All packages within a snapshot are guaranteed to work with each other.
  + At any one point in time on CRAN, there will be packages that fail checks but are within grace periods and have not yet been updated or archived.
@@ -23,11 +24,14 @@ Instead of the continuous rolling deployment model that CRAN provides, we provid
 
 We take quarterly snapshots on the 15th of each month in May, August, November and February.
 
+*[Our first Production release is scheduled for 15 November 2024, and prior to that, a sample repository is available at <https://r-multiverse.org/snapshot>]*
+
 ## The Production Staging Process
 
 Before each quarterly release, packages go through a one-month 'staging' process, which helps ensure packages continue to meet the high standards required of Production.
 
-Packages enter into the Staging repository at <https://staging.r-multiverse.org/>. For those with passing checks, the package version is frozen.
+Packages enter into the Staging repository at <https://staging.r-multiverse.org/>.
+For those with passing checks, the package version is frozen.
 
 - Even if another package release is made and Community updates, the version in Staging remains the same.
 
@@ -48,7 +52,8 @@ This repository provides:
 - Mac x86: R-4.4 binary, R-4.3 binary
 - Mac arm64: R-4.4 binary, R-4.3 binary
 
-It may be used in R repository settings or directly as the 'repos' argument to `install.packages()`. To query available packages:
+It may be used in R repository settings or directly as the 'repos' argument to `install.packages()`.
+To query available packages:
 
 ```r
 available.packages(repos = "https://production.r-multiverse.org")

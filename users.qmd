@@ -4,7 +4,8 @@ title: "Users"
 
 ## How to install a package from R-multiverse
 
-R has built-in support for multiple repositories. To add R-multiverse to your repository settings, a line can be added to your `.Rprofile` as follows.
+R has built-in support for multiple repositories.
+To add R-multiverse to your repository settings, a line can be added to your [`.Rprofile`](https://rstats.wtf/r-startup.html#rprofile) as follows.
 
 For Community:
 
@@ -48,5 +49,6 @@ By [contributing](contributors.qmd) a package that you rely on, you can ensure i
 
 Maintainers may use R-multiverse as a faster release channel, especially for packages under intensive development. 
 
-CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates. R-multiverse allows maintainers to push critical updates or bug fixes directly to users.
+CRAN is first and foremost an archival network, and its policy restricts the frequency of package updates.
+R-multiverse allows maintainers to push critical updates or bug fixes directly to users.
 :::
