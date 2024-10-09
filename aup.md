@@ -2,7 +2,7 @@
 title: "Acceptable Use Policy"
 ---
 
-The terms "R-multiverse", "User", "Contributor", "Moderator" and "Administrator" are as defined in the [R-multiverse Governance Document](governance.md).
+The terms "R-multiverse", "User", "Contributor", "Moderator" and "Administrator" shall have the meaning as defined in the [R-multiverse Governance Document](governance.md).
 This Acceptable Use Policy (the "Policy") outlines the standards of conduct expected from all Users and Contributors to R-multiverse (the "Repository").
 By accessing or using the Repository, you agree to comply with this Policy.
 Violations of this Policy may result in the suspension or termination of your access to the Repository.
