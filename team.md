@@ -85,13 +85,13 @@ She also created the [R-hub blog](https://blog.r-hub.io/) and co-wrote the onlin
 :::: {.columns}
 ::: {.column width=20%}
 <a href="https://github.com/eitsupi" target="_blank">
-  SHIMA Tatsuya
+  Shima Tatsuya
 </a>
 :::
 ::: {.column width=10%}
 :::
 ::: {.column width=70%}
-SHIMA Tatsuya is a developer with expertise in integrating R with Rust.
+Shima Tatsuya is a developer with expertise in integrating R with Rust.
 He is one of the maintainers for the [Rocker](https://rocker-project.org/) project, and a core developer of the [polars](https://github.com/pola-rs/r-polars) R package.
 :::
 ::::
