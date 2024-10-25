@@ -15,6 +15,7 @@ Users and Contributors must not submit, post, or share any content that:
 
 - **Illegal or Unlawful**: Violates any applicable laws, regulations, or guidelines in your jurisdiction, including content that promotes illegal activities, constitutes fraud, or violates intellectual property rights.
 - **Malicious Software**: Contains viruses, malware, ransomware, trojan horses, or any other harmful or malicious code designed to disrupt, damage, or interfere with the proper functioning of any software, hardware, or network.
+- **Sabotage and Cyberattacks**: Engages in or supports any form of sabotage or cyberattack, including but not limited to attacks on research, infrastructure, or industrial control systems of any third party.
 - **Harassment and Hate Speech**: Includes language or content that is abusive, defamatory, harassing, discriminatory, threatening, or hateful based on race, gender, ethnicity, religion, disability, sexual orientation, or any other protected characteristic.
 - **Violence**: Promotes, organizes, threatens, encourages, glorifies, or incites violence of any kind, including threats of harm or abuse or incitement of self-harm.
 - **Obscenity**: Is explicit, graphic, exploitative, abusive, or deliberately profane, sexually or otherwise, including but not limited to cases where minors are concerned.
