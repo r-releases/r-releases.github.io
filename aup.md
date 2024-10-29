@@ -39,7 +39,7 @@ You are **solely responsible** for the content you contribute to the Repository 
 - You own or have the necessary rights to use and submit the content in question.
 - Your content does not violate any applicable laws, regulations, or third-party rights, including intellectual property rights.
 - Your content does not contain any harmful or malicious code that could impact the operation of the Repository or harm other Users.
-- Your content is not prohibited content under clause 1 above and also is not intended for the purposes of prohibited activities under clause 2 above does not violate any other provision of this policy.
+- Your content is not prohibited content under clause 1 above and also is not intended for the purposes of prohibited activities under clause 2 above, and does not violate any other provision of this policy.
 
 **You acknowledge and agree that the neither the Repository Administrators, nor Moderators, whether collectively or individually, are not responsible for the content you or others contribute to the Repository, and they shall not be held liable for any damages or losses resulting from such content.**
 
