@@ -182,6 +182,90 @@
     "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
+    "objectID": "aup.html",
+    "href": "aup.html",
+    "title": "Acceptable Use Policy",
+    "section": "",
+    "text": "The terms “R-multiverse”, “User”, “Contributor”, “Moderator” and “Administrator” shall have the meaning as defined in the R-multiverse Governance Document. This Acceptable Use Policy (the “Policy”) outlines the standards of conduct expected from all Users and Contributors to R-multiverse (the “Repository”). The term “You” or “Your” refers to any individual or entity that accesses, uses, contributes to, or interacts with R-multiverse, including but not limited to Users and Contributors.\nBy accessing or using the Repository, you agree to comply with this Policy. Violations of this Policy may result in the suspension or termination of your access to the Repository."
+  },
+  {
+    "objectID": "aup.html#prohibited-content",
+    "href": "aup.html#prohibited-content",
+    "title": "Acceptable Use Policy",
+    "section": "1. Prohibited Content",
+    "text": "1. Prohibited Content\nUsers and Contributors must not submit, post, or share any content that:\n\nIllegal or Unlawful: Violates any applicable laws, including content that promotes illegal activities, constitutes fraud, or violates intellectual property rights or other laws, regulations, and guidelines in your jurisdiction.\nMalicious Software: Contains viruses, malware, ransomware, trojan horses, or any other harmful or malicious code designed to disrupt, damage, or interfere with the proper functioning of any software, hardware, or network.\nSabotage and Cyberattacks: Engages in or supports any form of sabotage or cyberattack, including but not limited to attacks on research, infrastructure, or industrial control systems of any third party.\nHarassment and Hate Speech: Includes language or content that is abusive, defamatory, harassing, discriminatory, threatening, or hateful based on race, gender, ethnicity, religion, disability, sexual orientation, or any other protected characteristic.\nViolence: Promotes, organizes, threatens, encourages, glorifies, or incites violence of any kind, including threats of harm or abuse or incitement of self-harm.\nObscenity: Is explicit, graphic, exploitative, abusive, or deliberately profane, sexually or otherwise, including but not limited to cases where minors are concerned.\nSpam and Unsolicited Messages: Involves sending unsolicited messages, advertising, promotional materials, or any form of spam not directly related to the technical content of the Repository.\nPrivacy: Reveals personal information of others without their consent, including but not limited to private email addresses, phone numbers, physical addresses, bank account or credit card information, social security or national identity numbers, passwords, voter information, medical information and other private information whose disclosure is a safety or security risk.\nImpersonation: Misrepresents your identity or affiliation, or that of another person or organization."
+  },
+  {
+    "objectID": "aup.html#prohibited-activities",
+    "href": "aup.html#prohibited-activities",
+    "title": "Acceptable Use Policy",
+    "section": "2. Prohibited Activities",
+    "text": "2. Prohibited Activities\nUsers and Contributors are prohibited from engaging in activities that:\n\nUnauthorized Access: Attempt to gain unauthorized access to the Repository or any associated systems, networks, or data.\nDisruption of Services: Interfere with or disrupt the operation of the Repository, including launching denial-of-service attacks or other harmful activities.\nCircumventing Security Measures: Attempt to bypass or disable any security or authentication measures implemented by the Repository administrators.\nData Harvesting: Use any automated system, including “bots”, “scrapers”, or other similar data-gathering tools, to extract data from the Repository for unauthorized purposes."
+  },
+  {
+    "objectID": "aup.html#responsibility-for-contributed-content",
+    "href": "aup.html#responsibility-for-contributed-content",
+    "title": "Acceptable Use Policy",
+    "section": "3. Responsibility for Contributed Content",
+    "text": "3. Responsibility for Contributed Content\nYou are solely responsible for the content you contribute to the Repository and for any harm or liability that results from such content. This includes, but is not limited to, code, documentation, comments, and any other materials you post. By submitting content to the Repository, you represent and warrant that:\n\nYou own or have the necessary rights to use and submit the content in question.\nYour content does not violate any applicable laws, regulations, or third-party rights, including intellectual property rights.\nYour content does not contain any harmful or malicious code that could impact the operation of the Repository or harm other Users.\nYour content abides by all R-multiverse policies, including but not limited to clause 1 (Prohibited Content) and clause 2 (Prohibited Activities) of this policy.\n\nYou acknowledge and agree that the neither the Repository Administrators, nor Moderators, whether collectively or individually, are not responsible for the content you or others contribute to the Repository, and they shall not be held liable for any damages or losses resulting from such content."
+  },
+  {
+    "objectID": "aup.html#privacy-and-misuse-of-personal-information",
+    "href": "aup.html#privacy-and-misuse-of-personal-information",
+    "title": "Acceptable Use Policy",
+    "section": "4. Privacy and Misuse of Personal Information",
+    "text": "4. Privacy and Misuse of Personal Information\n\nPersonal Data: You must not collect, store, or share personal information from other Users of the Repository without their explicit consent. Personal information includes, but is not limited to, names, addresses, email addresses, and any other data that can identify an individual.\nMisuse of Personal Information: You are prohibited from using personal information obtained through the Repository for any unlawful, unauthorized, or unethical purposes, including harassment, spamming, identity theft, or any form of misuse.\nData Protection: You agree to comply with all applicable data protection and privacy laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and any other relevant regulations governing the processing and protection of personal data."
+  },
+  {
+    "objectID": "aup.html#user-safety-and-protection",
+    "href": "aup.html#user-safety-and-protection",
+    "title": "Acceptable Use Policy",
+    "section": "5. User Safety and Protection",
+    "text": "5. User Safety and Protection\n\nRespectful Environment: The Repository is committed to maintaining a safe and respectful environment. All Users, Contributors, Moderators and Administrators must adhere to the Repository’s Code of Conduct, which sets the standards for respectful interactions and community behavior.\nThreats and Violence: You must not make threats of violence or promote violence against any individual or group of individuals. Any behavior that poses a risk to the safety or well-being of others will be taken seriously and may result in immediate removal from the Repository.\nZero Tolerance for Hate Speech: Hate speech, which includes any content that incites hatred or discrimination against individuals or groups based on race, ethnicity, national origin, gender, gender identity, sexual orientation, religion, disability, or any other characteristic, is strictly forbidden."
+  },
+  {
+    "objectID": "aup.html#export-controls-and-sanctions-compliance",
+    "href": "aup.html#export-controls-and-sanctions-compliance",
+    "title": "Acceptable Use Policy",
+    "section": "6. Export Controls and Sanctions Compliance",
+    "text": "6. Export Controls and Sanctions Compliance\nYou agree to comply with all applicable laws regarding the export of software and technical data, including, but not limited to, the export control laws and regulations of your jurisdictions. By using the Repository, you represent and warrant that:\n\nProhibited Destinations: You will not transfer, export, re-export, or download any software or technical data made available through the Repository to any individual, entity, or country where such export is restricted or prohibited by applicable laws.\nCompliance Responsibility: It is your responsibility to understand and comply with the relevant export control and sanctions laws pertaining to you before using, contributing to, or downloading content from the Repository."
+  },
+  {
+    "objectID": "aup.html#intellectual-property",
+    "href": "aup.html#intellectual-property",
+    "title": "Acceptable Use Policy",
+    "section": "7. Intellectual Property",
+    "text": "7. Intellectual Property\nContributors must ensure that any code, documentation, or content they submit to the Repository is their own original work or that they have obtained all necessary permissions to use and share the content. Submissions must not infringe on the copyrights, trademarks, or other intellectual property rights of third parties."
+  },
+  {
+    "objectID": "aup.html#enforcement-and-reporting-violations",
+    "href": "aup.html#enforcement-and-reporting-violations",
+    "title": "Acceptable Use Policy",
+    "section": "8. Enforcement and Reporting Violations",
+    "text": "8. Enforcement and Reporting Violations\nAdministrators and Moderators of the Repository reserve the right to take appropriate actions to enforce this Policy, including but not limited to:\n\nRemoving or modifying content that violates this Policy.\nTemporarily or permanently suspending access to the Repository for Users and Contributors who breach this Policy.\nReporting unlawful activities to law enforcement authorities.\n\nIf you believe someone has violated this Policy or you encounter any inappropriate content on the Repository, please report it immediately to the Repository Administrators."
+  },
+  {
+    "objectID": "aup.html#indemnification",
+    "href": "aup.html#indemnification",
+    "title": "Acceptable Use Policy",
+    "section": "9. Indemnification",
+    "text": "9. Indemnification\nYou agree to indemnify and hold harmless the Repository Administrators and Moderators, collectively and individually, from any claims, liabilities, damages, losses, and expenses, including legal fees, arising out of or in any way connected with your violation of this Policy."
+  },
+  {
+    "objectID": "aup.html#right-to-modify-policy",
+    "href": "aup.html#right-to-modify-policy",
+    "title": "Acceptable Use Policy",
+    "section": "10. Right to Modify Policy",
+    "text": "10. Right to Modify Policy\nThe Administrators of the Repository reserve the right to modify or update this Acceptable Use Policy at any time, in accordance with the procedures set out in the R-multiverse Governance Document. Your continued use of the Repository following any changes constitutes your acceptance of the revised Policy."
+  },
+  {
+    "objectID": "aup.html#disclaimer-of-liability",
+    "href": "aup.html#disclaimer-of-liability",
+    "title": "Acceptable Use Policy",
+    "section": "11. Disclaimer of Liability",
+    "text": "11. Disclaimer of Liability\nThe Repository Administrators and Moderators, collectively and individually, shall not be held liable for any content posted by Users or Contributors. All content in the Repository is provided “as-is”, and the Administrators and Moderators, collectively and individually, disclaim any responsibility for damages or losses resulting from content submitted by Users or Contributors."
+  },
+  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "MIT License",
