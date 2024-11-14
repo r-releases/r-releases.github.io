@@ -382,7 +382,7 @@
     "href": "production.html#a-snapshot-model-for-production",
     "title": "Production",
     "section": "A Snapshot Model for Production",
-    "text": "A Snapshot Model for Production\nTo provide a true production experience, we adopt a slighty different model. Instead of CRAN’s continuous rolling deployment, we provide snapshots of fixed package versions.\nThis has the following advantages:\n\nAll packages within a snapshot are guaranteed to work with each other (at any one point in time on CRAN, there will be packages that fail checks but are within grace periods and have not yet been updated or archived).\nUsing fixed package versions aids reproducibility.\nSuited to environments without the ability to update over the internet.\n\nWe take quarterly snapshots on the 15th of each month in February, May, August, and November."
+    "text": "A Snapshot Model for Production\nTo provide a true production experience, we adopt an alternative distribution model. Instead of CRAN’s continuous rolling deployment, we provide snapshots of fixed package versions.\nThis has the following advantages:\n\nAll packages within a snapshot are guaranteed to work with each other (at any one point in time on CRAN, there will be packages that fail checks but are within grace periods and have not yet been updated or archived).\nUsing fixed package versions aids reproducibility.\nSuited to environments without the ability to update over the internet.\n\nWe take quarterly snapshots on the 15th of each month in February, May, August, and November."
   },
   {
     "objectID": "production.html#the-production-staging-process",

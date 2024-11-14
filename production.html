@@ -258,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="a-snapshot-model-for-production" class="level2">
 <h2 class="anchored" data-anchor-id="a-snapshot-model-for-production">A Snapshot Model for Production</h2>
-<p>To provide a true production experience, we adopt a slighty different model. Instead of CRAN’s continuous rolling deployment, we provide snapshots of fixed package versions.</p>
+<p>To provide a true production experience, we adopt an alternative distribution model. Instead of CRAN’s continuous rolling deployment, we provide snapshots of fixed package versions.</p>
 <p>This has the following advantages:</p>
 <ol type="1">
 <li>All packages within a snapshot are guaranteed to work with each other (at any one point in time on CRAN, there will be packages that fail checks but are within grace periods and have not yet been updated or archived).</li>
