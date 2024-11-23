@@ -253,8 +253,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="beyond-community" class="level2">
 <h2 class="anchored" data-anchor-id="beyond-community">Beyond Community</h2>
 <p>Available at <a href="https://production.r-multiverse.org" class="uri">https://production.r-multiverse.org</a>, the Production repository is designed to go one step beyond Community.</p>
-<p>It is comprised only of Community packages that pass additional checks, including <code>R CMD check</code> on all major platforms, ensuring a cohort of packages that work seamlessly togther.</p>
-<p>So whilst Community will always offer the latest packages, as released by maintainers, they will only make it to Production if they pass these additional quality controls.</p>
+<p>It is comprised only of Community packages that pass additional checks, including <code>R CMD check</code> on all major platforms, ensuring a cohort of packages that work seamlessly together.</p>
+<p>So whilst Community will always offer the latest packages as released by maintainers, only by passing these additional quality controls will they make it to Production.</p>
 </section>
 <section id="a-snapshot-model-for-production" class="level2">
 <h2 class="anchored" data-anchor-id="a-snapshot-model-for-production">A Snapshot Model for Production</h2>
@@ -262,10 +262,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This has the advantage that:</p>
 <ol type="1">
 <li>All packages within a snapshot are guaranteed to work with each other (at any one point in time on CRAN, there will be packages that fail checks but are within grace periods and have not yet been updated or archived).</li>
-<li>Fixed package versions aids reproducibility.</li>
-<li>Does not require access to updates over the internet.</li>
+<li>Using fixed package versions aids reproducibility.</li>
+<li>Does not require constant updates to the latest package versions over the internet.</li>
 </ol>
-<p>We take quarterly snapshots on the 15th of each of February, May, August, and November.</p>
+<p>We take quarterly snapshots on the 15th of each month of February, May, August, and November.</p>
 </section>
 <section id="the-production-staging-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-production-staging-process">The Production Staging Process</h2>
@@ -279,11 +279,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Packages with failing checks will continue to update from Community if a new release is made.</li>
 </ul>
 <p>This process helps maintainers to fix bugs, whilst minimizing the chances of last minute issues affecting large cohorts of packages.</p>
-<p>Staging opens on the 15th of each of January, April, July, and October.</p>
+<p>Staging opens on the 15th of each month of January, April, July, and October.</p>
 </section>
 <section id="current-snapshot" class="level2">
 <h2 class="anchored" data-anchor-id="current-snapshot">Current Snapshot</h2>
-<p>The current (November 2004) snapshot release is available at <a href="https://production.r-multiverse.org" class="uri">https://production.r-multiverse.org</a>.</p>
+<p>The current (November 2024) snapshot release is available at <a href="https://production.r-multiverse.org" class="uri">https://production.r-multiverse.org</a>.</p>
 <p>This repository provides:</p>
 <ul>
 <li>Source files</li>
