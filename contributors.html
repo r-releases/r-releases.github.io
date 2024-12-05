@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,10 +70,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -131,25 +131,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./overview.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-repositories" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Repositories</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-repositories">    
         <li>
     <a class="dropdown-item" href="./community.html">
- <span class="dropdown-text">Community repository</span></a>
+ <span class="dropdown-text">Community</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./production.html">
- <span class="dropdown-text">Production repository</span></a>
+ <span class="dropdown-text">Production</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./users.html"> 
-<span class="menu-text">Users</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./contributors.html" aria-current="page"> 
 <span class="menu-text">Contributors</span></a>
@@ -158,37 +158,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./team.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-policies" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Policies</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-policies">    
-        <li>
-    <a class="dropdown-item" href="./terms.html">
- <span class="dropdown-text">Terms of Use</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./policies.html"> 
+<span class="menu-text">Policies</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./aup.html">
- <span class="dropdown-text">Acceptable Use Policy</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./review.html">
- <span class="dropdown-text">Review Policy</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./conduct.html">
- <span class="dropdown-text">Code of Conduct</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./governance.html">
- <span class="dropdown-text">Governance Document</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./security.html">
- <span class="dropdown-text">Security Policy</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -221,17 +194,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-register-a-package-with-r-multiverse" id="toc-how-to-register-a-package-with-r-multiverse" class="nav-link active" data-scroll-target="#how-to-register-a-package-with-r-multiverse">How to register a package with R-multiverse</a>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#registration" id="toc-registration" class="nav-link" data-scroll-target="#registration">Registration</a>
   <ul class="collapse">
-  <li><a href="#the-one-time-registration-process" id="toc-the-one-time-registration-process" class="nav-link" data-scroll-target="#the-one-time-registration-process">The one-time registration process</a></li>
-  <li><a href="#requirements-for-registration" id="toc-requirements-for-registration" class="nav-link" data-scroll-target="#requirements-for-registration">Requirements for registration</a></li>
+  <li><a href="#package-listings" id="toc-package-listings" class="nav-link" data-scroll-target="#package-listings">Package listings</a></li>
+  <li><a href="#pull-request-review" id="toc-pull-request-review" class="nav-link" data-scroll-target="#pull-request-review">Pull request review</a></li>
   </ul></li>
-  <li><a href="#how-to-create-a-badge" id="toc-how-to-create-a-badge" class="nav-link" data-scroll-target="#how-to-create-a-badge">How to create a badge</a></li>
-  <li><a href="#how-to-edit-or-remove-packages" id="toc-how-to-edit-or-remove-packages" class="nav-link" data-scroll-target="#how-to-edit-or-remove-packages">How to edit or remove packages</a></li>
-  <li><a href="#how-pull-requests-are-reviewed" id="toc-how-pull-requests-are-reviewed" class="nav-link" data-scroll-target="#how-pull-requests-are-reviewed">How pull requests are reviewed</a></li>
-  <li><a href="#how-the-r-multiverse-universe-is-built" id="toc-how-the-r-multiverse-universe-is-built" class="nav-link" data-scroll-target="#how-the-r-multiverse-universe-is-built">How the R-multiverse universe is built</a></li>
-  <li><a href="#ownership-and-attribution" id="toc-ownership-and-attribution" class="nav-link" data-scroll-target="#ownership-and-attribution">Ownership and attribution</a></li>
-  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting help</a></li>
+  <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community">Community</a></li>
+  <li><a href="#production" id="toc-production" class="nav-link" data-scroll-target="#production">Production</a></li>
+  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
+  <li><a href="#badges" id="toc-badges" class="nav-link" data-scroll-target="#badges">Badges</a></li>
+  <li><a href="#deregistration" id="toc-deregistration" class="nav-link" data-scroll-target="#deregistration">Deregistration</a></li>
+  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help">Help</a></li>
   </ul>
 </nav>
     </div>
@@ -257,90 +232,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>The <a href="./conduct.html">code of conduct</a> governs all forms of participation in the R-multiverse project, including package contributions, issues, discussions, and the development of infrastructure. Administrators, moderators, and contributors are all subject to its terms.</p>
-<section id="how-to-register-a-package-with-r-multiverse" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-register-a-package-with-r-multiverse">How to register a package with R-multiverse</h2>
-<section id="the-one-time-registration-process" class="level3">
-<h3 class="anchored" data-anchor-id="the-one-time-registration-process">The one-time registration process</h3>
+<p>This page explains how to contribute packages to R-multiverse.</p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
+<p><a href="./policies.html">R-multiverse policies</a> govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The <a href="./review.html">review policy</a> specifically governs package contribution and review.</p>
+<p>In addition, R-multiverse pulls R packages directly from <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">releases</a> on GitHub and GitLab. Before contributing a package to R-multiverse, please ensure it is available in a public GitHub/GitLab source code repository with at least one <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">release</a> (<a href="https://github.com/pola-rs/r-polars/releases/tag/v0.21.0">example</a>).</p>
+</section>
+<section id="registration" class="level2">
+<h2 class="anchored" data-anchor-id="registration">Registration</h2>
+<p>To register a package with R-multiverse:</p>
 <ol type="1">
 <li>Navigate to <a href="https://github.com/r-multiverse/contributions" class="uri">https://github.com/r-multiverse/contributions</a>.</li>
-<li>Open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a> to add one or more listings to the <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code> folder</a>.</li>
+<li>Contribute a <a href="https://github.com/r-multiverse/contributions/tree/main/packages">package listing</a> via <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">GitHub pull request</a>.</li>
 </ol>
 <p>Watch this 1-minute video to learn how:</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://player.vimeo.com/video/923333903" frameborder="0" title="R-multiverse contribution tutorial" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="package-listings" class="level3">
+<h3 class="anchored" data-anchor-id="package-listings">Package listings</h3>
+<p>A package listing is a text file in <a href="https://github.com/r-multiverse/contributions/tree/main/packages" class="uri">https://github.com/r-multiverse/contributions/tree/main/packages</a> which points to the home of the package on GitHub/GitLab. The file name of each listing is the name of the package. In most cases, the file itself contains the package URL on GitHub or GitLab (<a href="https://github.com/r-multiverse/contributions/blob/main/packages/polars">example</a>). But if the package is a subdirectory of the GitHub/GitLab repository, you may instead write custom JSON list with fields <code>package</code>, <code>url</code>, <code>subdir</code>, and <code>branch: "*release"</code> (<a href="https://github.com/r-multiverse/contributions/blob/main/packages/arrow">example</a>).</p>
 </section>
-<section id="requirements-for-registration" class="level3">
-<h3 class="anchored" data-anchor-id="requirements-for-registration">Requirements for registration</h3>
-<p>Each package listing is a simple text file:</p>
-<ol type="1">
-<li>The file name is the package name.</li>
-<li>The file contains a single line with the package URL. <a href="https://github.com/r-multiverse/contributions/blob/main/packages/gh">Example</a>: https://github.com/r-lib/gh</li>
-</ol>
-<p>The URL in (2) must be the true and authentic GitHub/GitLab location of the package according to its owners, or an active mirror of the true location.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Prerequisites for packages
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>The package source code must exist in a public <a href="https://github.com">GitHub</a> or <a href="https://gitlab.com">GitLab</a> repository with the <code>DESCRIPTION</code> file at the root of the project. Example: <a href="https://github.com/r-lib/gh" class="uri">https://github.com/r-lib/gh</a>.</li>
-<li>The repository must host a <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">GitHub release</a> or <a href="https://docs.gitlab.com/ee/user/project/releases/">GitLab release</a> for the latest version intended for distribution. Example: <a href="https://github.com/r-lib/gh/releases/tag/v1.4.0" class="uri">https://github.com/r-lib/gh/releases/tag/v1.4.0</a>. Pre-releases (GitHub) and upcoming releases (GitLab) are ignored to ensure each release has the full endorsement of its maintainer.</li>
-</ol>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Packages in a GitHub repo subdirectory
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In rare cases, the package may be in a subdirectory of a GitHub repo. In these cases, your text file may instead contain a JSON list with fields <code>package</code>, <code>url</code>, <code>subdir</code>, and <code>branch</code>, and the <code>branch</code> field must be <code>"*release"</code>. <a href="https://github.com/r-multiverse/contributions/blob/main/packages/arrow">Example</a>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"package"</span><span class="fu">:</span> <span class="st">"arrow"</span><span class="fu">,</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"url"</span><span class="fu">:</span> <span class="st">"https://github.com/apache/arrow"</span><span class="fu">,</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"subdir"</span><span class="fu">:</span> <span class="st">"r"</span><span class="fu">,</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"branch"</span><span class="fu">:</span> <span class="st">"*release"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
+<section id="pull-request-review" class="level3">
+<h3 class="anchored" data-anchor-id="pull-request-review">Pull request review</h3>
+<p>An automated process periodically scans and reviews each new pull request to <a href="https://github.com/r-multiverse/contributions" class="uri">https://github.com/r-multiverse/contributions</a>. Depending on the automated checks, the bot either merges the pull request or flags it for manual review by a <a href="./governance.html#moderator">moderator</a>. Some moderators only review packages specific to a subject matter area, so please consider mentioning a <a href="https://r-multiverse.org/topics/index.html">topic</a> in the title of the pull request.</p>
 </section>
 </section>
-<section id="how-to-create-a-badge" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-create-a-badge">How to create a badge</h2>
+<section id="community" class="level2">
+<h2 class="anchored" data-anchor-id="community">Community</h2>
+<p>After registration, the latest release of the package will automatically appear in the <a href="./community.html">Community</a> repository. <a href="https://github.com/features/actions">GitHub Actions</a> workflows periodically read all the <a href="https://github.com/r-multiverse/contributions/tree/main/packages">package listings</a>, generate an <a href="https://r-universe.dev">R-universe</a> <a href="https://github.com/r-multiverse/community/blob/main/packages.json"><code>packages.json</code></a> file, and host the <a href="./community.html">Community</a> repository as a <a href="https://r-universe.dev">universe</a>. The <a href="./community.html">Community</a> repository automatically distributes new releases that the package maintainer <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">creates on GitHub</a>/<a href="https://docs.gitlab.com/ee/user/project/releases/">GitLab</a>.</p>
+</section>
+<section id="production" class="level2">
+<h2 class="anchored" data-anchor-id="production">Production</h2>
+<p>R-multiverse updates the <a href="./production.html">Production</a> repository in quarterly snapshots. As part of this process, an intermediate Staging repository hosts packages and performs checks. Visit <a href="./production.html">this page</a> to learn more about <a href="./production.html">Production</a>.</p>
+</section>
+<section id="status" class="level2">
+<h2 class="anchored" data-anchor-id="status">Status</h2>
+<p>It is good practice to check the health of your contributed package using <a href="https://r-multiverse.org/status/index.html">R-multiverse status system</a>. You can read more about it <a href="./production.html#status">here in the Production page</a>.</p>
+</section>
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">Topics</h2>
+<p>R-multiverse has a <a href="https://r-multiverse.org/topics/index.html">“topics” system</a> for organizing packages into subject matter areas. Each topic has a page that lists the packages in its area (<a href="https://r-multiverse.org/topics/bayesian.html">example</a>). To contribute a package to a topic, simply list the topic URL in the <code>DESCRIPTION</code> file (<a href="https://github.com/ropensci/stantargets/blob/db7d119ea0599eac3ce01a42bee27c9908754943/DESCRIPTION#L22">example</a>). and then create a new GitHub/GitLab release. A bot periodically scans <a href="./community.html">Community</a> and updates the list of packages in each topic.</p>
+<p>To contribute a topic, submit a pull request to <a href="https://github.com/r-multiverse/topics" class="uri">https://github.com/r-multiverse/topics</a> to add a new text file (with no file extension) whose name is the topic name and whose contents describe the topic. The bot generates HTML pages from these text files.</p>
+</section>
+<section id="badges" class="level2">
+<h2 class="anchored" data-anchor-id="badges">Badges</h2>
 <p><a href="https://community.r-multiverse.org/mirai"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2Fmirai&amp;query=%24.Version&amp;label=r-multiverse" alt="R-multiverse status"></a></p>
 <p>To add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&amp;query=%24.Version&amp;label=r-multiverse)</span><span class="co">](https://community.r-multiverse.org/pkgNAME)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&amp;query=%24.Version&amp;label=r-multiverse)</span><span class="co">](https://community.r-multiverse.org/pkgNAME)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="how-to-edit-or-remove-packages" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-edit-or-remove-packages">How to edit or remove packages</h2>
-<p>To edit or remove one or more packages, submit a pull request to edit the files in the <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code></a> folder. To protect the package ecosystem, these kinds of pull requests are always flagged for manual review and never automatically merged.</p>
+<section id="deregistration" class="level2">
+<h2 class="anchored" data-anchor-id="deregistration">Deregistration</h2>
+<p>If it becomes necessary to deregister a package from R-multiverse, you may submit a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a> to remove the <a href="https://github.com/r-multiverse/contributions/tree/main/packages">package listing</a>. To prevent a package of the same name from registering in R-multiverse, you may contribute a listing with free-form text (not a URL or JSON list). Packages with missing or free-form listings are removed from <a href="./community.html">Community</a>, and the subsequent <a href="./production.html">Production</a> snapshot will not include them.</p>
 </section>
-<section id="how-pull-requests-are-reviewed" class="level2">
-<h2 class="anchored" data-anchor-id="how-pull-requests-are-reviewed">How pull requests are reviewed</h2>
-<p>An automated process periodically scans each new pull request to <a href="https://github.com/r-multiverse/contributions" class="uri">https://github.com/r-multiverse/contributions</a>. Depending on the results of the automated checks, the bot automatically merges the pull request, closes it, or flags it for manual review. In the latter case, an R-multiverse moderator will manually review your pull request and contact you if there are questions. Please see our <a href="./review.html">review policy</a> for more information about the process.</p>
-</section>
-<section id="how-the-r-multiverse-universe-is-built" class="level2">
-<h2 class="anchored" data-anchor-id="how-the-r-multiverse-universe-is-built">How the R-multiverse universe is built</h2>
-<p>Periodically, a GitHub Actions workflow collects all the packages and URLs from the <a href="https://github.com/r-multiverse/contributions/tree/main/packages"><code>packages</code></a> folder and builds the <code>packages.json</code> file for the universe at <a href="https://github.com/r-multiverse/community" class="uri">https://github.com/r-multiverse/community</a>. <a href="https://community.r-multiverse.org" class="uri">https://community.r-multiverse.org</a> periodically refreshes to include the latest release of each package in <code>packages.json</code>.</p>
-</section>
-<section id="ownership-and-attribution" class="level2">
-<h2 class="anchored" data-anchor-id="ownership-and-attribution">Ownership and attribution</h2>
-<p>Each submitted package URL must be authentic and genuine. The URL must be the true location of the package according to its true owners. If a URL in <a href="https://github.com/r-multiverse/contributions/tree/main/packages" class="uri">https://github.com/r-multiverse/contributions/tree/main/packages</a> points to the wrong place, please submit a pull request to <a href="https://github.com/r-multiverse/contributions" class="uri">https://github.com/r-multiverse/contributions</a> to fix the URL. If you do not know the correct URL or do not want to submit a pull request, please open an issue at <a href="https://github.com/r-multiverse/help/issues" class="uri">https://github.com/r-multiverse/help/issues</a>.</p>
-</section>
-<section id="getting-help" class="level2">
-<h2 class="anchored" data-anchor-id="getting-help">Getting help</h2>
+<section id="help" class="level2">
+<h2 class="anchored" data-anchor-id="help">Help</h2>
 <p>Please report bugs to <a href="https://github.com/r-multiverse/help/issues" class="uri">https://github.com/r-multiverse/help/issues</a> and send other feedback and questions to <a href="https://github.com/r-multiverse/help/discussions" class="uri">https://github.com/r-multiverse/help/discussions</a>. Please note that <a href="https://github.com/r-multiverse/contributions" class="uri">https://github.com/r-multiverse/contributions</a> can only accept pull requests to add or modify package entries.</p>
 
 
@@ -429,8 +373,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -541,7 +483,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

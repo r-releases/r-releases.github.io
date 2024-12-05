@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Community – R-multiverse</title>
+<title>Community repository – R-multiverse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -36,10 +70,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Community – R-multiverse">
+<meta property="og:title" content="Community repository – R-multiverse">
 <meta property="og:description" content="A community-curated package repository system, powered by R-universe">
 <meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
 <meta property="og:site_name" content="R-multiverse">
@@ -97,25 +131,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./overview.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-repositories" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Repositories</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-repositories">    
         <li>
     <a class="dropdown-item" href="./community.html">
- <span class="dropdown-text">Community repository</span></a>
+ <span class="dropdown-text">Community</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./production.html">
- <span class="dropdown-text">Production repository</span></a>
+ <span class="dropdown-text">Production</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./users.html"> 
-<span class="menu-text">Users</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contributors.html"> 
 <span class="menu-text">Contributors</span></a>
@@ -124,37 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./team.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-policies" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Policies</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-policies">    
-        <li>
-    <a class="dropdown-item" href="./terms.html">
- <span class="dropdown-text">Terms of Use</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./policies.html"> 
+<span class="menu-text">Policies</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./aup.html">
- <span class="dropdown-text">Acceptable Use Policy</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./review.html">
- <span class="dropdown-text">Review Policy</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./conduct.html">
- <span class="dropdown-text">Code of Conduct</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./governance.html">
- <span class="dropdown-text">Governance Document</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./security.html">
- <span class="dropdown-text">Security Policy</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -187,9 +194,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#an-open-repository-for-r-packages" id="toc-an-open-repository-for-r-packages" class="nav-link active" data-scroll-target="#an-open-repository-for-r-packages">An Open Repository for R Packages</a></li>
-  <li><a href="#continuous-maintainer-driven-deployment" id="toc-continuous-maintainer-driven-deployment" class="nav-link" data-scroll-target="#continuous-maintainer-driven-deployment">Continuous maintainer-driven deployment</a></li>
-  <li><a href="#what-about-my-personal-r-universe" id="toc-what-about-my-personal-r-universe" class="nav-link" data-scroll-target="#what-about-my-personal-r-universe">What about my personal R-universe?</a></li>
+  <li><a href="#users" id="toc-users" class="nav-link active" data-scroll-target="#users">Users</a></li>
+  <li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#personal-universes" id="toc-personal-universes" class="nav-link" data-scroll-target="#personal-universes">Personal universes</a></li>
   </ul>
 </nav>
     </div>
@@ -198,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Community</h1>
+<h1 class="title">Community repository</h1>
 </div>
 
 
@@ -215,31 +223,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="an-open-repository-for-r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="an-open-repository-for-r-packages">An Open Repository for R Packages</h2>
-<p>Packages are available for installation from the repository at <a href="https://community.r-multiverse.org" class="uri">https://community.r-multiverse.org</a>.</p>
-<p>A traditional software version cycle begins with the development phase, where bugs are identified and fixed, and ends with the production phase, which promises a seamless user experience.</p>
-<p>Community aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:</p>
+<p>The R-multiverse Community repository simplifies the distribution and deployment of R package releases, and it puts this power in the hands of package maintainers.</p>
+<section id="users" class="level2">
+<h2 class="anchored" data-anchor-id="users">Users</h2>
+<p>Users can navigate to <a href="https://community.r-multiverse.org" class="uri">https://community.r-multiverse.org</a> to learn more about packages in Community. To install a package, set the <code>repos</code> argument in <code>install.packages()</code>. For example: <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://community.r-multiverse.org"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="contributors" class="level2">
+<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
+<p>Anyone can <a href="./contributors.html">contribute</a> packages to Community via GitHub. After a one-time registration process for a package, the package maintainer directly controls distribution through the <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">release</a> system on GitHub/GitLab. Each new <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">release</a> automatically deploys to the repository without any manual intervention. <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>A traditional software version cycle begins with the development phase, where bugs are identified and fixed, and ends with the production phase, which promises a seamless user experience. Community aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:</p>
 <ol type="1">
 <li>Each package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.</li>
 <li>The user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, as indicated by their check results, publicly available at <a href="https://community.r-multiverse.org" class="uri">https://community.r-multiverse.org</a>.</li>
 </ol>
 </section>
-<section id="continuous-maintainer-driven-deployment" class="level2">
-<h2 class="anchored" data-anchor-id="continuous-maintainer-driven-deployment">Continuous maintainer-driven deployment</h2>
-<p>Anyone can <a href="./contributors.html">contribute</a> packages to Community via GitHub. Each package only needs to be registered once.</p>
-<p>Every new <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">release</a> then automatically deploys to the repository without needing to go through R-multiverse again. In other words, the package maintainer is in complete control.</p>
-<p>This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of <a href="https://ropensci.org/r-universe/">rOpenSci’s R-universe system</a>.</p>
-</section>
-<section id="what-about-my-personal-r-universe" class="level2">
-<h2 class="anchored" data-anchor-id="what-about-my-personal-r-universe">What about my personal R-universe?</h2>
-<p>R-multiverse perfectly complements your existing personal or organization R-universe.</p>
-<p>This can continue to hold either development or release versions for yourself and your colleagues. At the same time, R-multiverse deploys the latest package releases directly to the wider community.</p>
+<section id="personal-universes" class="level2">
+<h2 class="anchored" data-anchor-id="personal-universes">Personal universes</h2>
+<p>You can deploy a package through a personal or <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">organization</a>-level universe even if the package also is part of R-multiverse. In fact, a personal universe <a href="./production.html#debugging">may help reproduce and diagnose</a> <code>R CMD check</code> issues as you prepare a package for <a href="./production.html">Production</a>.</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p> Caution: when setting two repositories in the <code>repos</code> argument, the same package may be in both. <code>install.packages()</code> chooses the most current version, which could be in either repository.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This maintainer-driven experience was made possible by the incredible infrastructure of <a href="https://ropensci.org/r-universe/">rOpenSci’s R-universe system</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -322,8 +341,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -434,7 +451,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

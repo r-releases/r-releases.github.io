@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,12 +34,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="R-multiverse">
+<meta property="og:title" content="– R-multiverse">
 <meta property="og:description" content="A community-curated package repository system, powered by R-universe">
 <meta property="og:image" content="https://r-multiverse.org/logo/logo-hexbin.png">
 <meta property="og:site_name" content="R-multiverse">
@@ -77,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:image:width" content="181">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,25 +96,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./overview.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-repositories" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Repositories</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-repositories">    
         <li>
     <a class="dropdown-item" href="./community.html">
- <span class="dropdown-text">Community repository</span></a>
+ <span class="dropdown-text">Community</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./production.html">
- <span class="dropdown-text">Production repository</span></a>
+ <span class="dropdown-text">Production</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./users.html"> 
-<span class="menu-text">Users</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contributors.html"> 
 <span class="menu-text">Contributors</span></a>
@@ -124,37 +123,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./team.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-policies" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Policies</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-policies">    
-        <li>
-    <a class="dropdown-item" href="./terms.html">
- <span class="dropdown-text">Terms of Use</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./policies.html"> 
+<span class="menu-text">Policies</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./aup.html">
- <span class="dropdown-text">Acceptable Use Policy</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./review.html">
- <span class="dropdown-text">Review Policy</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./conduct.html">
- <span class="dropdown-text">Code of Conduct</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./governance.html">
- <span class="dropdown-text">Governance Document</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./security.html">
- <span class="dropdown-text">Security Policy</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -182,55 +154,36 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">R-multiverse</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<div class="quarto-about-marquee">
+  <div class="about-image-container">
+    <img src="logo/logo-website.png" class="about-image " style="width: 100%;">
   </div>
-  
+  <div class="about-contents">
+    <header id="title-block-header" class="quarto-title-block"></header> <main class="content" id="quarto-document-content">
+<p>R-multiverse is a general-purpose R package repository system with <a href="./policies.html">transparent governance</a> and open source infrastructure. Visit the <a href="./overview.html">overview page</a> to learn more.</p>
 
 
-</header>
-
-
-<p><img src="logo/logo-hexbin.png" align="right" width="140"></p>
-<section id="a-community-curated-package-repository-system-powered-by-r-universe" class="level4">
-<h4 class="anchored" data-anchor-id="a-community-curated-package-repository-system-powered-by-r-universe">A community-curated package repository system, powered by <br>R-universe</h4>
-</section>
-<section id="community" class="level4">
-<h4 class="anchored" data-anchor-id="community">Community</h4>
-<p><a href="./community.html">community.r-multiverse.org</a></p>
-<p>An open and inclusive R package repository with transparent governance standards, built on open source infrastructure.</p>
-</section>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">+</h4>
-</section>
-<section id="production" class="level4">
-<h4 class="anchored" data-anchor-id="production">Production</h4>
-<p><a href="./production.html">production.r-multiverse.org</a></p>
-<p>A quarterly snapshot release of R packages, designed for deployment in production environments.</p>
-<br>
-<hr>
-<p>This project is supported by an <a href="https://r-consortium.org">R Consortium</a> ISC grant and originated from the R Consortium <a href="https://github.com/RConsortium/r-repositories-wg">Repositories Working Group</a>.</p>
-
-
-</section>
-
-</main> <!-- /main -->
+</main> 
+    <div class="about-footer"><div class="about-links">
+  <a href="https://r-multiverse.org/overview.html" class="about-link" rel="" target="">
+    <i class="bi bi-star"></i>
+     <span class="about-link-text">Overview page</span>
+  </a>
+  <a href="https://community.r-multiverse.org" class="about-link" rel="" target="">
+    <i class="bi bi-rocket-takeoff"></i>
+     <span class="about-link-text">Community repository</span>
+  </a>
+  <a href="https://github.com/r-multiverse/help" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Help forum</span>
+  </a>
+</div>
+</div>
+  </div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -251,13 +204,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -313,8 +259,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -425,7 +369,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
