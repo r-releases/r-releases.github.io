@@ -229,15 +229,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The Production repository comprises a subset of <a href="./community.html">Community</a> package releases which are mutually compatible and meet a high standard of quality.</p>
 <section id="users" class="level2">
 <h2 class="anchored" data-anchor-id="users">Users</h2>
-<p>Users can install releases from the current Production snapshot by setting the <code>repos</code> argument in <code>install.packages()</code>. For example:</p>
-<pre class="{r}"><code>install.packages(
-  "polars",
-  repos = c(
-    "https://production.r-multiverse.org",
-    "https://packagemanager.posit.co/cran/2024-11-15"
-  )
-)</code></pre>
-<p>The second link in the <code>repos</code> argument is the <a href="https://packagemanager.posit.co/">Posit Public Package Manager (p3m)</a> snapshot of CRAN on the day the current R-multiverse Production snapshot was created. This alignment helps ensure that the versions of packages you install from R-multiverse Production are compatible with the versions of CRAN dependencies you install. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Production deploys in periodic snapshots throughout the year (details below). The current Production snapshot was created on 2024-11-15 when base R had version 4.4.2. All packages passed automated checks at that time. However, the same checks might not pass using a different version of R or different versions of dependencies from <a href="https://cran.r-project.org/">CRAN</a>.</p>
+<p>To ensure compatibility, please use R version 4.4.2 and <a href="https://cran.r-project.org/">CRAN</a> dependencies from 2024-11-15. <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> can help. Example:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://production.r-multiverse.org"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://packagemanager.posit.co/cran/2024-11-15"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">Checks</h2>
@@ -335,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p> However, please keep in mind that when setting two repositories in the <code>repos</code> argument, the same package may be in both. <code>install.packages()</code> chooses the most current version, which could be in either repository.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Caveat: when setting two URLs in the repos argument, the same package may be in both repositories, and the highest version is always preferred.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>However, an R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>And compatible with versions of dependencies that were on CRAN at the time of the snapshot.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
