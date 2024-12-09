@@ -11,7 +11,7 @@
     "href": "production.html#users",
     "title": "Production repository",
     "section": "Users",
-    "text": "Users\nProduction deploys in periodic snapshots throughout the year (details below). The current Production snapshot was created on 2024-11-15 when base R had version 4.4.2. All packages passed automated checks at that time. However, the same checks might not pass using a different version of R or different versions of dependencies from CRAN.\nTo ensure compatibility, please use R version 4.4.2 and CRAN dependencies from 2024-11-15. Posit Public Package Manager (p3m) can help. Example:1\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org\",\n    \"https://packagemanager.posit.co/cran/2024-11-15\"\n  )\n)"
+    "text": "Users\nProduction deploys in periodic snapshots throughout the year (details below). The current Production snapshot was created on 2024-11-15 when base R had version 4.4.2. All packages passed automated checks at that time. However, the same checks might not pass using a different version of R or different versions of dependencies from CRAN.\nFor the current snapshot, please use R version 4.4.2 and CRAN dependencies from 2024-11-15 to ensure compatibility. Posit Public Package Manager (p3m) can help. Example:1\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org\",\n    \"https://packagemanager.posit.co/cran/2024-11-15\"\n  )\n)"
   },
   {
     "objectID": "production.html#checks",
