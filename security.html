@@ -155,8 +155,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#protecting-r-multiverse-users" id="toc-protecting-r-multiverse-users" class="nav-link active" data-scroll-target="#protecting-r-multiverse-users">Protecting R-multiverse users</a>
+  <ul class="collapse">
+  <li><a href="#contact-the-package-authors" id="toc-contact-the-package-authors" class="nav-link" data-scroll-target="#contact-the-package-authors">Contact the package authors</a></li>
+  <li><a href="#contact-r-multiverse" id="toc-contact-r-multiverse" class="nav-link" data-scroll-target="#contact-r-multiverse">Contact R-multiverse</a></li>
+  <li><a href="#notify-the-community" id="toc-notify-the-community" class="nav-link" data-scroll-target="#notify-the-community">Notify the community</a></li>
+  </ul></li>
+  <li><a href="#protecting-r-multiverse" id="toc-protecting-r-multiverse" class="nav-link" data-scroll-target="#protecting-r-multiverse">Protecting R-multiverse</a>
+  <ul class="collapse">
+  <li><a href="#public-attacks" id="toc-public-attacks" class="nav-link" data-scroll-target="#public-attacks">Public attacks</a></li>
+  <li><a href="#private-vulnerability-reporting" id="toc-private-vulnerability-reporting" class="nav-link" data-scroll-target="#private-vulnerability-reporting">Private vulnerability reporting</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -182,16 +198,45 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Security threats and vulnerabilities affect everyone using R-multiverse. Issues may include (but are not limited to):</p>
 <ul>
+<li>Malware or exploitable code in R packages contributed to R-multiverse.</li>
 <li>Unauthorized access to <a href="https://github.com/r-multiverse" class="uri">https://github.com/r-multiverse</a> or its repositories.</li>
 <li>Malicious attempts to inundate <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a> with pull requests.</li>
 <li>Other <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">denial of service (DoS) attacks</a> on the <a href="https://github.com/apps/r-multiverse">R-multiverse bot</a> or other infrastructure.</li>
 </ul>
-<p>Please help keep R-multiverse operational. In the event of publicly visible malicious behavior, such as a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DoS attack</a> on <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a>, please:</p>
+<section id="protecting-r-multiverse-users" class="level2">
+<h2 class="anchored" data-anchor-id="protecting-r-multiverse-users">Protecting R-multiverse users</h2>
+<p>If you notice a security issue in an R package contributed to R-multiverse, please report it.</p>
+<section id="contact-the-package-authors" class="level3">
+<h3 class="anchored" data-anchor-id="contact-the-package-authors">Contact the package authors</h3>
+<p>First, please inform the package authors about the issue. If the vulnerability is still active, please report privately to prevent potential attackers from learning about it. Some packages support <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">private vulnerability reporting</a> through GitHub, while in other cases, you may need to email the maintainer listed in the package <code>DESCRIPTION</code> file.</p>
+</section>
+<section id="contact-r-multiverse" class="level3">
+<h3 class="anchored" data-anchor-id="contact-r-multiverse">Contact R-multiverse</h3>
+<p>If the package authors do not respond, or if otherwise appropriate, please inform R-multiverse confidentially at <a href="https://github.com/r-multiverse/help/security" class="uri">https://github.com/r-multiverse/help/security</a>. (See the “Private vulnerability reporting” section below).</p>
+</section>
+<section id="notify-the-community" class="level3">
+<h3 class="anchored" data-anchor-id="notify-the-community">Notify the community</h3>
+<p>When the package vulnerability is resolved (or if the issue is still unresolved but public reporting poses no risk), please notify the community:</p>
+<ol type="1">
+<li>Add the affected versions of the package to the <a href="https://github.com/RConsortium/r-advisory-database">R Consortium Advisory Database</a> so that R-multiverse infrastructure can automatically detect the security issue.</li>
+<li>Open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a>. In the comments, please notify the R-multiverse administrators and moderators using <code>@r-multiverse/administrators</code> and <code>@r-multiverse/moderators</code>, respectively.</li>
+</ol>
+</section>
+</section>
+<section id="protecting-r-multiverse" class="level2">
+<h2 class="anchored" data-anchor-id="protecting-r-multiverse">Protecting R-multiverse</h2>
+<p>Please help keep R-multiverse operational.</p>
+<section id="public-attacks" class="level3">
+<h3 class="anchored" data-anchor-id="public-attacks">Public attacks</h3>
+<p>In the event of publicly visible malicious activity in R-multiverse infrastructure, such as a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DoS attack</a> on <a href="https://github.com/r-multiverse/contributions/pulls" class="uri">https://github.com/r-multiverse/contributions/pulls</a>, please:</p>
 <ol type="1">
 <li><a href="https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam">Report abuse or spam</a> through GitHub.</li>
-<li>Open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform R-multiverse administrators.</li>
+<li>Open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform R-multiverse administrators and moderators.</li>
 </ol>
-<p>If you notice a vulnerability that an attacker could potentially exploit, please <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">report it privately</a>. Confidentiality helps fix the problem before most attackers even know about it. After remediation, R-multiverse administrators will open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform community about the vulnerability and its resolution.</p>
+</section>
+<section id="private-vulnerability-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="private-vulnerability-reporting">Private vulnerability reporting</h3>
+<p>If you notice a vulnerability in R-multiverse that an attacker has not yet exploited, please <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">report it privately</a>. Confidentiality helps fix the problem before most attackers even know about it. After remediation, R-multiverse administrators will open an issue at <a href="https://github.com/r-multiverse/help" class="uri">https://github.com/r-multiverse/help</a> to inform community about the vulnerability and its resolution.</p>
 <p>The steps to <a href="https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability">privately report vulnerabilities</a> are:</p>
 <ol type="1">
 <li>Navigate to <a href="https://github.com/r-multiverse/help/security" class="uri">https://github.com/r-multiverse/help/security</a>.</li>
@@ -201,6 +246,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
