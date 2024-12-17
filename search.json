@@ -480,21 +480,42 @@
     "href": "review.html",
     "title": "Review Policy",
     "section": "",
-    "text": "As the contributors page explains, updates to the R-multiverse package listings come from pull requests to https://github.com/r-multiverse/contributions from members of the R community. In the vast majority of cases, a GitHub app automatically merges the pull request. However, some pull requests need to be manually reviewed by an R-multiverse moderator. This document describes this manual review process. The goals are to:"
+    "text": "This policy dictates the process by which R-multiverse reviews and accepts contributed R packages. All contributions must comply with R-multiverse policies, including but not limited to Acceptable Use, Terms of Use, and Code of Conduct."
   },
   {
-    "objectID": "review.html#the-automated-review-process",
-    "href": "review.html#the-automated-review-process",
+    "objectID": "review.html#how-review-works",
+    "href": "review.html#how-review-works",
     "title": "Review Policy",
-    "section": "The automated review process",
-    "text": "The automated review process\nThe review.yaml GitHub Actions workflow runs periodically and reviews each new open pull request using multiverse.internals::review_pull_requests(). Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.\nThe pull request is automatically closed if:\n\nIt attempts to add/modify/delete a file outside the packages folder.\nIt attempts to add/modify/delete a file in a subdirectory of the packages folder.\n\nThe pull request is automatically flagged for manual review if:\n\nThe latest commit was not created by the GitHub web interface.\nIt attempts to modify or delete any existing file in packages.\nA contributed text file is not a single-line file.\nThe text file looks like a custom JSON entry (for packages in a subdirectory of a GitHub repository).\nThe name of the the text file is not a valid R package name.\nThe URL in the text file cannot be parsed.\nThe URL scheme is anything other than HTTPS.\nThe domain of the URL is anything other than github.com or gitlab.com.\nThe URL points to an organization or user such as https://github.com/r-lib rather than a repository such as https://github.com/r-lib/gh.\nThe URL does not exist or is not online at the time it is checked (HTTP error trying to access it).\nA release could not be found at the repo in the URL.\nThe version-controlled repository name in the URL is different from the name of the file. (For example, if the file is named gh as the package, then the URL https://github.com/r-lib/gh-package would be flagged for manual review, but https://github.com/r-lib/gh would not.)\nThe repository is part of the CRAN mirror at https://github.com/cran.\nThe package is also on CRAN, and the URL in the pull request cannot be found in the DESCRIPTION file of the latest CRAN release."
+    "section": "How review works",
+    "text": "How review works\nWhen it reviews a new pull request, the bot makes one of three choices:\n\nMerge the pull request to accept the contribution.\nFlag the pull request for manual review by a moderator."
   },
   {
-    "objectID": "review.html#the-manual-review-process",
-    "href": "review.html#the-manual-review-process",
+    "objectID": "review.html#automatic-acceptance",
+    "href": "review.html#automatic-acceptance",
     "title": "Review Policy",
-    "section": "The manual review process",
-    "text": "The manual review process\nIf a pull request is flagged for manual review, an R-multiverse moderator will read the pull request and ask questions if necessary. Although the moderator may make optional suggestions on a case-by-case basis, package reviews must be consistent, reliable, and inclusive whenever possible. The decision to close or merge the pull request must be based exclusively on the following pre-defined list of requirements:\n\nEach contribution must comply with the code of conduct. Examples of prohibited content include profanity, malicious behavior, security risks, copyright violations, and other conduct which could reasonably be considered inappropriate in a professional setting. All this applies to the package, the URL, any other metadata in the contribution, and the contents of the package itself.\nThe package name, URL, and all other metadata must be complete and correct.\nEach text file must apply to only one package.\nThe text file name must be the name of the package.\nFor JSON listings, the \"branch\" field must be \"*release\" (except in specific predetermined cases such as packages in https://github.com/cran), the \"subdirectory\" field must be supplied and exist, the \"url\" field must exist and be correct, and the \"package\" field must agree with the name of the text file.\nEach contributed URL must point to an existing GitHub or GitLab repository.\nThe URL must be the true/official location of the source code or a faithful mirror of the true location. The package maintainers have the authority to choose the URL. Unofficial or unsupported forks should not be included. The moderator must use discretion on a case-by-case basis because sometimes a fork becomes the true version (e.g. if the original maintainer abandons a package and becomes unreachable indefinitely).\nThe URL must have a release on GitHub or GitLab so R-universe can process the package without error. As a last resort, if the maintainer does not provide their own releases, a repository from the CRAN mirror at https://github.com/cran may be registered.\nIf the listing of an existing package is modified, then the moderator must verify that the new information is complete and correct. In many cases, it may be necessary to obtain permission from the package maintainer.\nThe reasons for deleting a package listing may vary on a case-by-case basis. The moderator must carefully consider the impact that deletion would have on the community and on reverse dependencies. In many cases, it may be necessary to obtain permission from the package maintainer."
+    "section": "Automatic acceptance",
+    "text": "Automatic acceptance\nThe bot automatically accepts the contribution if the author of the pull request:\n\nIs a public member of one of the trusted GitHub organizations listed at https://github.com/r-multiverse/contributions/blob/main/organizations.\n\nand if the pull request itself:\n\nWas created by the GitHub web interface.\nAdds new contributed listings to the packages folder.\nDoes not add, modify, or delete any other files in https://github.com/r-multiverse/contributions.\n\nand if each new contributed listing:\n\nIs a single line of text with a valid HTTPS URL.\nPoints to an existing public GitHub/GitLab repository.\n\nand if the contributed GitHub/GitLab repository:\n\nIncludes a GitHub/GitLab release.\nIncludes an R package at the top level whose package name is the same as the repository name.\nIs listed in the URL field of the corresponding CRAN page (if a package with the same name is on CRAN).\n\nand if the R package:\n\nAttributes ownership and authorship clearly and consistently.\nIncludes a license from the “Licenses” section at the end of this policy.\nDoes not have an advisory in the R Consortium Advisory Database.\nIs not part of the CRAN mirror at https://github.com/cran."
+  },
+  {
+    "objectID": "review.html#manual-review",
+    "href": "review.html#manual-review",
+    "title": "Review Policy",
+    "section": "Manual review",
+    "text": "Manual review\nR-multiverse moderators review pull requests that the bot flags for manual review. The moderator inspects the package for compliance with R-multiverse policies, including but not limited to Acceptable Use, Terms of Use, and Code of Conduct. The moderator accepts the contribution if and only if it complies with all policies."
+  },
+  {
+    "objectID": "review.html#removal",
+    "href": "review.html#removal",
+    "title": "Review Policy",
+    "section": "Removal",
+    "text": "Removal\nR-multiverse may remove a package from its own repositories at any time if the package violates R-multiverse policies."
+  },
+  {
+    "objectID": "review.html#licenses",
+    "href": "review.html#licenses",
+    "title": "Review Policy",
+    "section": "Licenses",
+    "text": "Licenses\nThe Acceptable Use Policy prohibits packages that “violate any applicable laws, regulations, or third-party rights, including intellectual property rights”. To protect the intellectual property rights of the package owners, each contributed package must have a valid free and open-source (FOSS) license, and the package owners must be correctly attributed. The following is a list of valid open-source licenses that the bot automatically accepts during reviews.\n\nApache 2.0\nArtistic 2.0\nBSD 2-Clause\nBSD 3-Clause\nGPL-2\nGPL-3\nLGPL-2\nLGPL-2.1\nLGPL-3\nMIT"
   },
   {
     "objectID": "team.html",
