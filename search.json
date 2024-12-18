@@ -522,14 +522,14 @@
     "href": "team.html",
     "title": "Team",
     "section": "",
-    "text": "Will Landau is a statistician and software developer in the life sciences. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages targets and crew.\n\n\n\n\n\n\n\n  \n\n\n\nCharlie Gao is director of Hibiki AI and a co-creator of R-multiverse. He is the creator of the mirai async framework for R and co-organizer of the CambRidge R user group.\n\n\n\n\n\n\n\n  \n\n\n\nJeroen is a software research engineer at rOpenSci where he is the creator and lead developer of R-universe, the core infrastructure upon which R-multiverse depends. He is the maintainer of many R packages including curl and jsonlite.\n\n\n\n\n\n\n\n  \n\n\n\nMaëlle is a research software engineer, part-time with rOpenSci, notably maintaining its Packages: Development, Maintenance, and Peer Review guide. She also created the R-hub blog and co-wrote the online book HTTP testing in R."
+    "text": "Will Landau is a statistician and software developer at Eli Lilly and Company. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages targets and crew.\n\n\n\n\n\n\n\n  \n\n\n\nCharlie Gao is director of Hibiki AI and a co-creator of R-multiverse. He is the creator of the mirai async framework for R and co-organizer of the CambRidge R user group.\n\n\n\n\n\n\n\n  \n\n\n\nJeroen is a software research engineer at rOpenSci where he is the creator and lead developer of R-universe, the core infrastructure upon which R-multiverse depends. He is the maintainer of many R packages including curl and jsonlite.\n\n\n\n\n\n\n\n  \n\n\n\nMaëlle is a research software engineer, part-time with rOpenSci, notably maintaining its Packages: Development, Maintenance, and Peer Review guide. She also created the R-hub blog and co-wrote the online book HTTP testing in R."
   },
   {
     "objectID": "team.html#administrators",
     "href": "team.html#administrators",
     "title": "Team",
     "section": "",
-    "text": "Will Landau is a statistician and software developer in the life sciences. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages targets and crew.\n\n\n\n\n\n\n\n  \n\n\n\nCharlie Gao is director of Hibiki AI and a co-creator of R-multiverse. He is the creator of the mirai async framework for R and co-organizer of the CambRidge R user group.\n\n\n\n\n\n\n\n  \n\n\n\nJeroen is a software research engineer at rOpenSci where he is the creator and lead developer of R-universe, the core infrastructure upon which R-multiverse depends. He is the maintainer of many R packages including curl and jsonlite.\n\n\n\n\n\n\n\n  \n\n\n\nMaëlle is a research software engineer, part-time with rOpenSci, notably maintaining its Packages: Development, Maintenance, and Peer Review guide. She also created the R-hub blog and co-wrote the online book HTTP testing in R."
+    "text": "Will Landau is a statistician and software developer at Eli Lilly and Company. He specializes in Bayesian statistics, high-performance computing, and clinical trials. He is a co-creator of R-multiverse and the author of packages targets and crew.\n\n\n\n\n\n\n\n  \n\n\n\nCharlie Gao is director of Hibiki AI and a co-creator of R-multiverse. He is the creator of the mirai async framework for R and co-organizer of the CambRidge R user group.\n\n\n\n\n\n\n\n  \n\n\n\nJeroen is a software research engineer at rOpenSci where he is the creator and lead developer of R-universe, the core infrastructure upon which R-multiverse depends. He is the maintainer of many R packages including curl and jsonlite.\n\n\n\n\n\n\n\n  \n\n\n\nMaëlle is a research software engineer, part-time with rOpenSci, notably maintaining its Packages: Development, Maintenance, and Peer Review guide. She also created the R-hub blog and co-wrote the online book HTTP testing in R."
   },
   {
     "objectID": "team.html#moderators",
@@ -543,14 +543,14 @@
     "href": "team.html#roles",
     "title": "Team",
     "section": "Roles",
-    "text": "Roles\n\nAdministrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.\nModerators review package contributions according to the package review policy."
+    "text": "Roles\n\nAdministrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.\nModerators review package contributions according to the package review policy, and they moderate issues and discussions raised in the r-multiverse/help repository and other forums on R-multiverse."
   },
   {
     "objectID": "team.html#support",
     "href": "team.html#support",
     "title": "Team",
     "section": "Support",
-    "text": "Support\n\n\nR Consortium\n\n\n  \n\n\n\nWe would like to thank the R Consortium for their support in the development of R-multiverse."
+    "text": "Support\n\n\nR Consortium\n\n\n  \n\n\n\nR-multiverse originated from the R Consortium Repositories Working Group, and it was supported by R Consortium ISC grant 24-ISC-1-05. We would like to thank the R Consortium for this support in the development of R-multiverse."
   },
   {
     "objectID": "overview.html",
